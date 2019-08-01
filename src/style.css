@@ -222,37 +222,37 @@ h1, p {
 }
 
 .Introduction, .Introduction h1, .Introduction h2 {
-    background: url('../images/Introduction.jpg') no-repeat;
+    background: url('/images/Introduction.jpg') no-repeat;
     background-position: top;
     background-size: 100%;
 }
 
 .Experience, .Experience h1, .Experience h2 {
-    background: url('../images/Experience.jpg') no-repeat;
+    background: url('/images/Experience.jpg') no-repeat;
     background-position: top;
     background-size: 100%;
 }
 
 .Skills, .Skills h1, .Skills h2 {
-    background: url('../images/Skills.jpg') no-repeat;
+    background: url('/images/Skills.jpg') no-repeat;
     background-position: top;
     background-size: 100%;
 }
 
 .Project, .Project h1, .Project h2 {
-    background: url('../images/Project.jpg') no-repeat;
+    background: url('/images/Project.jpg') no-repeat;
     background-position: top;
     background-size: 100%;
 }
 
 .Summary, .Summary h1, .Summary h2 {
-    background: url('../images/Summary.jpg') no-repeat;
+    background: url('/images/Summary.jpg') no-repeat;
     background-position: top;
     background-size: 100%;
 }
 
 .Introduction, .Experience, .Skills, .Project, .Summary {
-    background-image: url('../images/animation.gif');
+    background-image: url('/images/animation.gif');
     background-position: center bottom;
     background-attachment: fixed;
     width: 100vw;
@@ -489,28 +489,28 @@ body {
 }
 
 .circle1 {
-    background-image: url(../images/earth_1.png);
+    background-image: url('/images/earth_1.png');
     background-size: 350%;
     background-position-x: -210px;
     background-position-y: 6px;
 }
 
 .circle2 {
-    background-image: url(../images/earth_2.png);
+    background-image: url('/images/earth_2.png');
     background-size: 350%;
     background-position-x: -410px;
     background-position-y: -150px;
 }
 
 .circle3 {
-    background-image: url(../images/earth_3.png);
+    background-image: url('/images/earth_3.png');
     background-size: 350%;
     background-position-x: -318px;
     background-position-y: -192px;
 }
 
 .circle4 {
-    background-image: url(../images/earth_4.png);
+    background-image: url('/images/earth_4.png');
     background-size: 350%;
     background-position-x: -487px;
     background-position-y: -193px;
@@ -548,7 +548,7 @@ body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    background-image: url('../images/galaxy.jpg');
+    background-image: url('/images/galaxy.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
