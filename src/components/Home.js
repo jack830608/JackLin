@@ -24,17 +24,17 @@ export default class App extends React.Component {
 
 
   componentDidMount() {
-    setInterval(() => {
-      if (this.state.i === 360) {
-        this.setState({ i: this.state.i - 1, j: false })
-      } else if (this.state.j === false && this.state.i >= 0) {
-        this.setState({ i: this.state.i - 1 })
-      } else if (this.state.i <= 0) {
-        this.setState({ i: this.state.i + 1, j: true })
-      } else {
-        this.setState({ i: this.state.i + 1 })
-      }
-    }, 300)
+    // setInterval(() => {
+    //   if (this.state.i === 360) {
+    //     this.setState({ i: this.state.i - 1, j: false })
+    //   } else if (this.state.j === false && this.state.i >= 0) {
+    //     this.setState({ i: this.state.i - 1 })
+    //   } else if (this.state.i <= 0) {
+    //     this.setState({ i: this.state.i + 1, j: true })
+    //   } else {
+    //     this.setState({ i: this.state.i + 1 })
+    //   }
+    // }, 300)
   }
   render() {
     return (
