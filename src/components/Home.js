@@ -24,21 +24,10 @@ export default class App extends React.Component {
 
 
   componentDidMount() {
-    // setInterval(() => {
-    //   if (this.state.i === 360) {
-    //     this.setState({ i: this.state.i - 1, j: false })
-    //   } else if (this.state.j === false && this.state.i >= 0) {
-    //     this.setState({ i: this.state.i - 1 })
-    //   } else if (this.state.i <= 0) {
-    //     this.setState({ i: this.state.i + 1, j: true })
-    //   } else {
-    //     this.setState({ i: this.state.i + 1 })
-    //   }
-    // }, 300)
   }
   render() {
     return (
-      <div className="homeBox" style={{ backgroundSize: `${100 + this.state.i / 3}% ${100 + this.state.i / 3}%` }}>
+      <div className="homeBox">
         <div>
           <img src="../images/icon.png" className="homeImg" />
         </div>
