@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Link } from "react-router-dom";
+import '../style.css'
 export default class App extends React.Component {
   constructor(props) {
     super(props);

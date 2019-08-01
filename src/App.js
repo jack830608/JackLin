@@ -6,7 +6,6 @@ import Project from './containers/Project';
 import Skills from './containers/Skills';
 import Summary from './containers/Summary';
 import Home from './containers/Home';
-import './style.css';
 export default class App extends React.Component {
   constructor(props) {
     super(props);
