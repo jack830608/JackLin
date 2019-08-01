@@ -51,7 +51,7 @@ export default class App extends React.Component {
                 onMouseOut={this.introduction_out}
               >
                 <div style={{ display: this.state.introduction, transform: `rotate(-${this.state.i}deg)` }} className='hidecircle'>
-                  <div>Introduction</div>
+                  <div>test</div>
                 </div>
               </div>
             </Link>
