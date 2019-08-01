@@ -17,8 +17,8 @@ export default class Introduction extends React.Component {
               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                   <h1 className="h1name" style={{ fontWeight: 500 }}>
-                    林偉捷（Jack Lin
-                          </h1>
+                    林偉捷（Jack Lin）
+                  </h1>
                   <div
                     style={{ marginRight: '10px', cursor: 'pointer' }}
                     onClick={() => window.open('https://www.facebook.com/WEIJIE.LIN7777', '_blank')}

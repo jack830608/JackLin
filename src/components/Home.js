@@ -4,8 +4,6 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      i: 0,
-      j: true,
       introduction: 'none',
       experience: 'none',
       skills: 'none',
@@ -22,9 +20,6 @@ export default class App extends React.Component {
   project_over = () => { this.setState({ project: 'visible' }) }
   project_out = () => { this.setState({ project: 'hidden' }) }
 
-
-  componentDidMount() {
-  }
   render() {
     return (
       <div className="homeBox">
