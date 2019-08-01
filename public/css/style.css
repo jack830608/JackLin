@@ -457,7 +457,7 @@ body {
 }
 
 .hidecircle {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 275px;
@@ -468,7 +468,9 @@ body {
     font-size: 16px;
     color: #FFF;
     letter-spacing: 0.3rem;
-    transition: 300ms linear all;
+    transition: 100ms linear all;
+    visibility: hidden;
+    animation: spin- infinite 150s linear;
 }
 
 .circle1, .circle2, .circle3, .circle4 {
@@ -547,11 +549,11 @@ body {
     width: 100vw;
     overflow: hidden;
     background-image: url('../images/galaxy.jpg');
-    transition: 300ms linear;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
     margin: 0;
+    animation: resize infinite 200s linear;
 }
 
 .desktopMenu {
@@ -671,8 +673,37 @@ body {
     line-height: 22px;
 }
 
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin- {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+@keyframes resize {
+    0% {
+        background-size: 100% 100%;
+    }
+    50% {
+        background-size: 180% 180%;
+    }
+    100% {
+        background-size: 100% 100%;
+    }
+
+}
+
 .rotate {
-    transition: 300ms linear all;
+    animation: spin infinite 150s linear;
 }
 
 .note {
@@ -682,17 +713,19 @@ body {
     background: #FFF;
     padding: 70px 50px 70px 20px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(12,0,51,0.2);
-    margin:0 auto;
+    box-shadow: 0 4px 8px 0 rgba(12, 0, 51, 0.2);
+    margin: 0 auto;
     position: relative;
 }
-.noteImg{
+
+.noteImg {
     opacity: 0.3;
-    position:absolute;
-    right:40px;
-    bottom:40px;
-    width:55px;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 55px;
 }
+
 .holeHolder {
     display: flex;
     flex-direction: column;
@@ -705,7 +738,7 @@ body {
     height: 25px;
     background: #F5F5F5;
     border-radius: 50%;
-    box-shadow:1px 1px 3px 2px rgba(12,0,51,0.1) inset;
+    box-shadow: 1px 1px 3px 2px rgba(12, 0, 51, 0.1) inset;
 }
 
 .animated-icon1 {
@@ -840,7 +873,7 @@ body {
     letter-spacing: 2px;
 }
 
-.SkillArrowLeft1{
+.SkillArrowLeft1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -947,36 +980,42 @@ body {
     transform: translateX(-4px);
     z-index: -2;
 }
-.gitBook{
+
+.gitBook {
     display: flex;
-    width:100vw;
-    padding:100px 0;
-    margin-top:100px;
+    width: 100vw;
+    padding: 100px 0;
+    margin-top: 100px;
     box-sizing: border-box;
     background: #3884ff;
     justify-content: center;
     align-items: flex-start;
     transform: skewY(-5deg);
 }
-.gitBookLogo{
-    width:200px;
-    margin:0 10px;
+
+.gitBookLogo {
+    width: 200px;
+    margin: 0 10px;
     transform: skewY(5deg);
 }
-.category{
-    color:#FFF;
+
+.category {
+    color: #FFF;
     font-weight: 700;
-    margin-left:80px;
-    font-size:20px;
+    margin-left: 80px;
+    font-size: 20px;
     transform: skewY(5deg);
 }
-.gitBookSelect{
+
+.gitBookSelect {
     opacity: 0.7;
     transition: 0.3s;
 }
-.gitBookSelect:hover{
+
+.gitBookSelect:hover {
     opacity: 1;
 }
+
 @media only screen and (min-width:768px) {
     .mobileMenu {
         display: none !important;
@@ -987,28 +1026,26 @@ body {
 }
 
 @media only screen and (max-width:768px) {
-    .gitBook{
-        padding:60px 0;
-        margin-top:60px;
+    .gitBook {
+        padding: 60px 0;
+        margin-top: 60px;
     }
-    .gitBookLogo{
-        width:130px;
+    .gitBookLogo {
+        width: 130px;
     }
-    .category{
+    .category {
         font-weight: 600;
-        margin:0 10px;
-        font-size:18px;
+        margin: 0 10px;
+        font-size: 18px;
     }
     .summaryTitle1 {
         font-size: 16px;
         padding: 5px;
     }
-    
     .summaryTitle {
         font-size: 16px;
         padding: 5px;
     }
-    
     .summaryData {
         font-size: 12px;
         padding-left: 10px;
@@ -1019,10 +1056,10 @@ body {
         background: #FFF;
         padding: 30px 20px 30px 10px;
     }
-    .noteImg{
-        right:30px;
-        bottom:30px;
-        width:45px;
+    .noteImg {
+        right: 30px;
+        bottom: 30px;
+        width: 45px;
     }
     .holeHolder {
         display: flex;
@@ -1030,13 +1067,12 @@ body {
         justify-content: space-around;
         margin-right: 15px
     }
-    
     .hole {
         width: 20px;
         height: 20px;
         background: #EDEDED;
         border-radius: 50%;
-        box-shadow: 1px 1px 2px 1px rgba(12,0,51,0.1) inset;
+        box-shadow: 1px 1px 2px 1px rgba(12, 0, 51, 0.1) inset;
     }
     .SkillBox1, .SkillBox2, .SkillBox3 {
         font-size: 18px;
@@ -1106,7 +1142,7 @@ body {
         margin: 0 8px;
     }
     .mobileMenu {
-        display: none ;
+        display: none;
         overflow: hidden;
     }
     .homeBox {
@@ -1133,7 +1169,7 @@ body {
         border-radius: 15px 15px 15px 3px;
         left: 5px;
         top: 5px;
-        background: rgba(0,0,0,0);
+        background: rgba(0, 0, 0, 0);
         transition: 0.6s;
     }
     .frame img {
@@ -1170,9 +1206,9 @@ body {
     .hidecircle {
         width: 150px;
         height: 150px;
-        display: flex !important;
         font-size: 10px;
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.1rem;
+        visibility: visible !important;
     }
     .circle1, .circle2, .circle3, .circle4 {
         width: 150px;

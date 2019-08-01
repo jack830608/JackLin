@@ -13,14 +13,14 @@ export default class App extends React.Component {
     };
   }
 
-  introduction_over = () => { this.setState({ introduction: 'flex' }) }
-  introduction_out = () => { this.setState({ introduction: 'none' }) }
-  experience_over = () => { this.setState({ experience: 'flex' }) }
-  experience_out = () => { this.setState({ experience: 'none' }) }
-  skills_over = () => { this.setState({ skills: 'flex' }) }
-  skills_out = () => { this.setState({ skills: 'none' }) }
-  project_over = () => { this.setState({ project: 'flex' }) }
-  project_out = () => { this.setState({ project: 'none' }) }
+  introduction_over = () => { this.setState({ introduction: 'visible' }) }
+  introduction_out = () => { this.setState({ introduction: 'hidden' }) }
+  experience_over = () => { this.setState({ experience: 'visible' }) }
+  experience_out = () => { this.setState({ experience: 'hidden' }) }
+  skills_over = () => { this.setState({ skills: 'visible' }) }
+  skills_out = () => { this.setState({ skills: 'hidden' }) }
+  project_over = () => { this.setState({ project: 'visible' }) }
+  project_out = () => { this.setState({ project: 'hidden' }) }
 
 
   componentDidMount() {
@@ -42,7 +42,7 @@ export default class App extends React.Component {
         <div>
           <img src="../images/icon.png" className="homeImg" />
         </div>
-        <div className="rotate" style={{ transform: `rotate(${this.state.i}deg)` }}>
+        <div className="rotate">
           <div style={{ display: 'flex', flexDirection: 'row' }}>
             <Link to="/introduction">
               <div
@@ -50,7 +50,7 @@ export default class App extends React.Component {
                 onMouseOver={this.introduction_over}
                 onMouseOut={this.introduction_out}
               >
-                <div style={{ display: this.state.introduction, transform: `rotate(-${this.state.i}deg)` }} className='hidecircle'>
+                <div style={{ visibility: this.state.introduction }} className='hidecircle'>
                   <div>Introduction</div>
                 </div>
               </div>
@@ -61,7 +61,7 @@ export default class App extends React.Component {
               onMouseOver={this.experience_over}
               onMouseOut={this.experience_out}
             >
-              <div style={{ display: this.state.experience, transform: `rotate(-${this.state.i}deg)` }} className='hidecircle'>
+              <div style={{ visibility: this.state.experience}} className='hidecircle'>
                 <div>Experience</div>
               </div>
             </div>
@@ -74,7 +74,7 @@ export default class App extends React.Component {
               onMouseOver={this.skills_over}
               onMouseOut={this.skills_out}
             >
-              <div style={{ display: this.state.skills, transform: `rotate(-${this.state.i}deg)` }} className='hidecircle'>
+              <div style={{ visibility: this.state.skills}} className='hidecircle'>
                 <div>Skills</div>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default class App extends React.Component {
               onMouseOver={this.project_over}
               onMouseOut={this.project_out}
             >
-              <div style={{ display: this.state.project, transform: `rotate(-${this.state.i}deg)` }} className='hidecircle'>
+              <div style={{ visibility: this.state.project }} className='hidecircle'>
                 <div>Project</div>
               </div>
             </div>
