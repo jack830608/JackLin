@@ -20,6 +20,21 @@ export default class Menu extends React.Component {
         $('.frame').css('background-color', 'rgba(0, 0, 0, 0)')
       }
     });
+    // $(document).scroll(function () {
+    //   if ($(window).scrollTop() > 100) {
+    //     console.log('>100')
+    //     $('.frame').css('background-color', 'rgba(0,0,0,0.3)')
+    //     $('.menuR').css('color', '#FFF')
+    //     $('.menu').css('color', '#FFF')
+    //     $('.menuR:after').css('background', '#FFF')
+    //     $('.menu:after').css('background', '#FFF')
+    //   } else if ($(window).scrollTop() < 100) {
+    //     console.log('<100')
+    //     $('.frame').css('background-color', 'inherit')
+    //     $('.menuR').css('color', 'rgb(15, 20, 33)')
+    //     $('.menu').css('color', 'rgb(15, 20, 33)')
+    //   }
+    // });
   }
   render() {
     return (
