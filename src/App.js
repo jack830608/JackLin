@@ -7,7 +7,7 @@ import Skills from './containers/Skills';
 import Summary from './containers/Summary';
 import Home from './containers/Home';
 import ScrollToTop from './components/ScrollToTop'
-import  './style.css'
+import  './style.scss'
 export default class App extends React.Component {
   constructor(props) {
     super(props);
