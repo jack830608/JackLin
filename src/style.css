@@ -540,7 +540,7 @@ body {
     width: 150px;
 }
 
-.homeBox {
+#homeBox {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1145,7 +1145,7 @@ body {
         display: none;
         overflow: hidden;
     }
-    .homeBox {
+    #homeBox {
         flex-direction: column;
         animation:none ;
         background-position: unset;

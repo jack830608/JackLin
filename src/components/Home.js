@@ -22,7 +22,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div className="homeBox">
+      <div id='homeBox'>
         <div>
           <img src="../images/icon.png" className="homeImg" />
         </div>
