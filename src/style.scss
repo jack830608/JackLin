@@ -350,7 +350,7 @@ p {
     padding: 10px 2px;
     cursor: pointer;
     letter-spacing: 2px;
-    color: rgb(15, 20, 33);
+    color: #878787;
     font-size: 14px;
     font-weight: 500;
     font-family: 'Raleway', sans-serif;
@@ -368,7 +368,7 @@ p {
         height: 1px;
         left: 50%;
         position: absolute;
-        background: rgb(15, 20, 33);
+        background: #878787;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
     }
@@ -421,7 +421,11 @@ p {
     border-radius: 5px;
     margin: 0 20%;
 }
-
+.logo{
+    height:45px;
+    cursor: pointer;
+    margin:0 20px;
+}
 .Mmenu:hover {
     transform: translate(0, -2px);
 }
@@ -1281,17 +1285,20 @@ body {
     }
 
     .frame {
-        padding: 5px;
-        width: calc(100% - 20px);
+        padding: 10px 15px;
+        width:calc(100% - 10px);
+        left:5px;
+        top:5px;
         border-radius: 15px 15px 15px 3px;
-        left: 5px;
-        top: 5px;
         background: rgba(0, 0, 0, 0);
         transition: 0.6s;
     }
+    .frameSection1 {
+        padding-bottom:10px;
+    }
 
-    .frame img {
-        height: 50px;
+    .logo {
+        margin:0;
     }
 
     .menu {
@@ -1392,7 +1399,6 @@ body {
 
     .nav {
         display: block;
-        padding: 5px 10px
     }
 
     html,

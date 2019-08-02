@@ -16,40 +16,36 @@ export default class Menu extends React.Component {
       this.setState({ menuShow: !this.state.menuShow });
       if (this.state.menuShow) {
         $('.frame').css('background-color', 'rgba(255,255,255,1)')
+        $('.frame').css('box-shadow', '0 4px 8px 0 rgba(12,0,51,0.1)')
       } else {
         $('.frame').css('background-color', 'rgba(0, 0, 0, 0)')
+        $('.frame').css('box-shadow', 'none')
       }
     });
-    // $(document).scroll(function () {
-    //   if ($(window).scrollTop() > 100) {
-    //     console.log('>100')
-    //     $('.frame').css('background-color', 'rgba(0,0,0,0.3)')
-    //     $('.menuR').css('color', '#FFF')
-    //     $('.menu').css('color', '#FFF')
-    //     $('.menuR:after').css('background', '#FFF')
-    //     $('.menu:after').css('background', '#FFF')
-    //   } else if ($(window).scrollTop() < 100) {
-    //     console.log('<100')
-    //     $('.frame').css('background-color', 'inherit')
-    //     $('.menuR').css('color', 'rgb(15, 20, 33)')
-    //     $('.menu').css('color', 'rgb(15, 20, 33)')
-    //   }
-    // });
+    $(document).scroll( () => {
+      if (window.innerWidth > 768) {
+        if ($(window).scrollTop() > (window.innerHeight - 100)) {
+          $('.frame').css('background-color', 'rgba(255,255,255,0.9)')
+          $('.frame').css('box-shadow', '0 3px 4px -3px #c6c6c6')
+        } else if ($(window).scrollTop() < (window.innerHeight - 100)) {
+          $('.frame').css('background-color', 'inherit')
+          $('.frame').css('box-shadow', 'none')
+        }
+      }
+    });
   }
   render() {
     return (
       <div className="frame">
         <div className="frameSection1">
           <Link to="/">
-            <img
-              src="images/icon_nobackground.png"
-              height="50px"
-              style={{ cursor: 'pointer', margin: '0 20px' }}
-            />
+            <img src="images/icon_nobackground.png" className="logo"/>
           </Link>
           <div className="desktopMenu">
             <Link to="/introduction">
-              <div className={this.props.page === 'Introduction' ? 'menuR' : 'menu'}>Introduction</div>
+              <div className={this.props.page === 'Introduction' ? 'menuR' : 'menu'}>
+                Introduction
+                </div>
             </Link>
             <Link to="/experience">
               <div className={this.props.page === 'Experience' ? 'menuR' : 'menu'}>Experience</div>
