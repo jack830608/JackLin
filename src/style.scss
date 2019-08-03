@@ -344,15 +344,23 @@ p {
     justify-content: space-between;
     align-items: center;
 }
-
+.menu_s{
+    width:100vw;
+    background: rgba(255, 255, 255, 0.8);
+    height: 0;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: -1;
+    transition: 0.3s ease-out;
+}
 .menu {
     margin: 0 18px;
     padding: 10px 2px;
     cursor: pointer;
     letter-spacing: 2px;
-    color: #878787;
+    color: rgb(15, 20, 33);
     font-size: 14px;
-    font-weight: 500;
     font-family: 'Raleway', sans-serif;
     -webkit-transition: all 150ms ease;
     transition: all 150ms ease;
@@ -368,7 +376,7 @@ p {
         height: 1px;
         left: 50%;
         position: absolute;
-        background: #878787;
+        background: rgb(15, 20, 33);
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
     }
@@ -386,7 +394,6 @@ p {
     letter-spacing: 2px;
     color: rgb(15, 20, 33);
     font-size: 14px;
-    font-weight: 500;
     font-family: 'Raleway', sans-serif;
     -webkit-transition: all 150ms ease;
     transition: all 150ms ease;
@@ -1304,7 +1311,9 @@ body {
     .menu {
         padding: 10px;
     }
-
+    .menu_s{
+        display: none;
+    }
     .WebBrowser {
         width: 90vw;
         margin: 0;

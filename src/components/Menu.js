@@ -25,11 +25,11 @@ export default class Menu extends React.Component {
     $(document).scroll( () => {
       if (window.innerWidth > 768) {
         if ($(window).scrollTop() > (window.innerHeight - 100)) {
-          $('.frame').css('background-color', 'rgba(255,255,255,0.9)')
-          $('.frame').css('box-shadow', '0 3px 4px -3px #c6c6c6')
+          $('.menu_s').css('height', '70px')
+          $('.menu_s').css('box-shadow', '0 3px 4px -3px #c6c6c6')
         } else if ($(window).scrollTop() < (window.innerHeight - 100)) {
-          $('.frame').css('background-color', 'inherit')
-          $('.frame').css('box-shadow', 'none')
+          $('.menu_s').css('height', '0')
+          $('.menu_s').css('box-shadow', 'none')
         }
       }
     });
@@ -37,6 +37,7 @@ export default class Menu extends React.Component {
   render() {
     return (
       <div className="frame">
+        <div className="menu_s"/>
         <div className="frameSection1">
           <Link to="/">
             <img src="images/icon_nobackground.png" className="logo"/>
