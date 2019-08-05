@@ -6,6 +6,7 @@ import Project from './containers/Project';
 import Skills from './containers/Skills';
 import Summary from './containers/Summary';
 import Home from './containers/Home';
+import Fion from './containers/Fion';
 import ScrollToTop from './components/ScrollToTop'
 import  './style.scss'
 export default class App extends React.Component {
@@ -44,6 +45,7 @@ export default class App extends React.Component {
           <Route path="/project" component={Project} />
           <Route path="/skills" component={Skills} />
           <Route path="/summary" component={Summary} />
+          <Route path="/fioncard" component={Fion} />
         </ScrollToTop>
       </Router>
     );
