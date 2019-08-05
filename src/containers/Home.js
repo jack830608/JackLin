@@ -12,7 +12,7 @@ export default class App extends React.Component {
   }
   componentDidMount() {
     function getBgUrl(el) {
-      var bg = "";
+      let bg = "";
       if (el.currentStyle) { // IE
         bg = el.currentStyle.backgroundImage;
       } else if (document.defaultView && document.defaultView.getComputedStyle) { // Firefox
@@ -23,7 +23,7 @@ export default class App extends React.Component {
       return bg.replace(/url\(['"]?(.*?)['"]?\)/i, "$1");
     }
 
-    var image = document.createElement('img');
+    let image = document.createElement('img');
     image.src = getBgUrl(document.getElementById('homeBox'));
     image.onload = function () {
       setTimeout(() => document.getElementById('loading').style.opacity = 0, 1500)
