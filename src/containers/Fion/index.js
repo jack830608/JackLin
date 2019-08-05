@@ -1,6 +1,5 @@
 import React from 'react';
 import './style.scss'
-import $ from 'jquery';
 
 export default class Fion extends React.Component {
     constructor(props) {
@@ -19,7 +18,10 @@ export default class Fion extends React.Component {
                     e.stopPropagation();
                 }}
             >
-                <div className="card_fion">
+                <div
+                    className="card_fion"
+                    style={{ background: this.state.zIndex === 1 ? 'rgba(0, 0, 0, 0.6)' : 'rgba(255, 255, 255, 0.6)' }}
+                >
                     <div className="circle_fion" />
                     <div className="title_fion"> Hello~ My Dear cat</div>
                     <div className="content_fion"> 哈囉～卡片終於來啦，之前就有跟你說不會是手作的卡片，因為我手很笨，做不出漂亮的東西，大概只有腦袋好使一點，所以希望你不要嫌棄它，這個卡片我也是很用心在做喔！</div>
@@ -40,7 +42,10 @@ export default class Fion extends React.Component {
                     e.stopPropagation();
                 }}
             >
-                <div className="card_fion">
+                <div
+                    className="card_fion"
+                    style={{ background: this.state.zIndex === 2 ? 'rgba(0, 0, 0, 0.6)' : 'rgba(255, 255, 255, 0.6)' }}
+                >
                     <div className="circle_fion" />
                     <div className="title_fion"> Hi~ My Dear cat</div>
                     <div className="content_fion">終於還是到了這一天；跟你告白到在一起後這163天，真的完全不敢去想妳要出國這件事，更沒有勇氣到機場去送你，因為我知道一定沒那麼容易可以平復自己的情緒，從你上飛機後我一定是躲在房間裡不停的睡了又醒醒了又睡，想必我們都需要至少21天來習慣這件事。</div>
