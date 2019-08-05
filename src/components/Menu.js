@@ -22,7 +22,7 @@ export default class Menu extends React.Component {
         $('.frame').css('box-shadow', 'none')
       }
     });
-    $(document).scroll( () => {
+    $(document).scroll(() => {
       if (window.innerWidth > 768) {
         if ($(window).scrollTop() > (window.innerHeight - 100)) {
           $('.menu_s').css('height', '70px')
@@ -33,18 +33,15 @@ export default class Menu extends React.Component {
         }
       }
     });
-    const script = document.createElement("script");
-    script.src = "https://www.sbot.ai/chat-bot/bubble.min.js?id=cjnmzdg6a00136tqlvmkxlift";
-    script.async = true;
-    document.body.appendChild(script);
+
   }
   render() {
     return (
       <div className="frame">
-        <div className="menu_s"/>
+        <div className="menu_s" />
         <div className="frameSection1">
           <Link to="/">
-            <img src="images/icon_nobackground.png" className="logo"/>
+            <img src="images/icon_nobackground.png" className="logo" />
           </Link>
           <div className="desktopMenu">
             <Link to="/introduction">
