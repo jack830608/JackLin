@@ -946,7 +946,6 @@ body {
     width: 30%;
     height: 200px;
     border-radius: 40px;
-    /* background: #3a9679; */
     background-image: linear-gradient(135deg, rgba(58, 150, 121, 1), rgba(58, 150, 121, 0.5));
     box-shadow: 0 4px 8px 0 rgba(12, 0, 51, 0.1);
     color: #FFF;
@@ -958,13 +957,14 @@ body {
     opacity: 0.8;
     padding: 10px;
     letter-spacing: 2px;
+    box-sizing: border-box;
 }
 
 .SkillArrowLeft1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 0 0 0 50px;
+    justify-content: flex-start;
+    padding: 20px 50px;
     width: 50%;
     height: 150px;
     background: #d1ebe3;
@@ -973,6 +973,9 @@ body {
     color: rgba(69, 69, 69, 0.8);
     font-size: 14px;
     white-space: nowrap;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
 }
 
 .SkillArrowRight1 {
@@ -988,7 +991,6 @@ body {
     width: 30%;
     height: 200px;
     border-radius: 40px;
-    /* background: #fabc60; */
     background-image: linear-gradient(135deg, rgba(250, 188, 96, 1), rgba(250, 188, 96, 0.5));
     box-shadow: 0 4px 8px 0 rgba(12, 0, 51, 0.1);
     color: #FFF;
@@ -1000,13 +1002,14 @@ body {
     opacity: 0.8;
     padding: 10px;
     letter-spacing: 2px;
+    box-sizing: border-box;
 }
 
 .SkillArrowLeft2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 0 0 0 50px;
+    justify-content: flex-start;
+    padding: 20px 50px;
     width: 50%;
     height: 150px;
     background: #f4ece1;
@@ -1015,6 +1018,8 @@ body {
     color: rgba(69, 69, 69, 0.8);
     font-size: 14px;
     white-space: nowrap;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .SkillArrowRight2 {
@@ -1030,7 +1035,6 @@ body {
     width: 30%;
     height: 200px;
     border-radius: 40px;
-    /* background: #e16262; */
     background-image: linear-gradient(135deg, rgba(225, 98, 98, 1), rgba(225, 98, 98, 0.5));
     box-shadow: 0 4px 8px 0 rgba(12, 0, 51, 0.1);
     color: #FFF;
@@ -1042,13 +1046,14 @@ body {
     opacity: 0.8;
     padding: 10px;
     letter-spacing: 2px;
+    box-sizing: border-box;
 }
 
 .SkillArrowLeft3 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 0 0 0 50px;
+    justify-content: flex-start;
+    padding: 20px 50px;
     width: 50%;
     height: 150px;
     background: #f3dddd;
@@ -1057,6 +1062,8 @@ body {
     color: rgba(69, 69, 69, 0.8);
     font-size: 14px;
     white-space: nowrap;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .SkillArrowRight3 {
@@ -1144,7 +1151,7 @@ body {
     .note {
         display: flex;
         background: #FFF;
-        padding: 30px 20px 30px 10px;
+        padding: 30px 15px 30px 10px;
     }
 
     .noteImg {
@@ -1157,7 +1164,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        margin-right: 15px
+        margin-right: 10px
     }
 
     .hole {
@@ -1180,8 +1187,9 @@ body {
     .SkillArrowLeft2,
     .SkillArrowLeft3 {
         font-size: 12px;
-        padding: 0 0 0 10px;
+        padding: 10px 15px;
         width: calc(90% - 40px);
+        justify-content: center;
     }
 
     .SkillArrowRight1 {
