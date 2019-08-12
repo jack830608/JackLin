@@ -12,7 +12,7 @@ export default class Experience extends React.Component {
   render() {
     return (
       <div>
-        <Menu page='Experience' />
+        <Menu page='Experience' {...this.props}/>
         <Banner page='Experience' />
         <Experience_C/>
       </div>

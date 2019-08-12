@@ -12,7 +12,7 @@ export default class Introduction extends React.Component {
   render() {
     return (
       <div>
-        <Menu page='Introduction' />
+        <Menu page='Introduction'{...this.props} />
         <Banner page='Introduction' />
         <Introduction_C/>
       </div>

@@ -13,7 +13,7 @@ export default class Summary extends React.Component {
   render() {
     return (
       <div>
-        <Menu page='Summary' />
+        <Menu page='Summary' {...this.props} />
         <Banner page='Summary' />
         <Summary_C/>
       </div>

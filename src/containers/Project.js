@@ -12,7 +12,7 @@ export default class Project extends React.Component {
   render() {
     return (
       <div>
-        <Menu page='Project' />
+        <Menu page='Project' {...this.props}/>
         <Banner page='Project' />
         <Project_C/>
         </div>

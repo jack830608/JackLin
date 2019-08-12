@@ -12,7 +12,7 @@ export default class Skills extends React.Component {
   render() {
     return (
       <div>
-        <Menu page='Skills' />
+        <Menu page='Skills' {...this.props}/>
         <Banner page='Skills' />
         <Skills_C/>
       </div>

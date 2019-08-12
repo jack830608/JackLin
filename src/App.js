@@ -8,7 +8,7 @@ import Summary from './containers/Summary';
 import Home from './containers/Home';
 import Fion from './containers/Fion';
 import ScrollToTop from './components/ScrollToTop'
-import  './style.scss'
+import './style.scss'
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -34,22 +34,39 @@ export default class App extends React.Component {
         }
       }
     )
-    const script = document.createElement("script");
-    script.src = "https://sbot.ai/chat-bot/bubble.min.js?id=cjnmzdg6a00136tqlvmkxlift";
-    script.async = true;
-    document.body.appendChild(script);
   }
   render() {
     return (
       <Router>
         <ScrollToTop>
-          <Route exact path="/" component={Home} />
-          <Route path="/introduction" component={Introduction} />
-          <Route path="/experience" component={Experience} />
-          <Route path="/project" component={Project} />
-          <Route path="/skills" component={Skills} />
-          <Route path="/summary" component={Summary} />
-          <Route path="/fioncard" component={Fion} />
+          <Route
+            exact path="/"
+            render={() => <Home {...this.props} />}
+          />
+          <Route
+            path="/introduction"
+            render={() => <Introduction {...this.props} />}
+          />
+          <Route
+            path="/experience"
+            render={() => <Experience {...this.props} />}
+          />
+          <Route
+            path="/project"
+            render={() => <Project {...this.props} />}
+          />
+          <Route
+            path="/skills"
+            render={() => <Skills {...this.props} />}
+          />
+          <Route
+            path="/summary"
+            render={() => <Summary {...this.props} />}
+          />
+          <Route
+            path="/fioncard"
+            render={() => <Fion {...this.props} />}
+          />
         </ScrollToTop>
       </Router>
     );

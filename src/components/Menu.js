@@ -33,7 +33,13 @@ export default class Menu extends React.Component {
         }
       }
     });
-
+    if(this.props.sbot){
+      const script = document.createElement("script");
+      script.src = "https://sbot.ai/chat-bot/bubble.min.js?id=cjnmzdg6a00136tqlvmkxlift";
+      script.async = true;
+      document.body.appendChild(script);
+      this.props.checkSbotAction(false);
+    }
   }
   render() {
     return (
