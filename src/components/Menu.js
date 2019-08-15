@@ -1,27 +1,23 @@
-import React from 'react';
+import React ,{useState}from 'react';
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import $ from 'jquery';
+import { useSelector , useDispatch} from 'react-redux';
 
-export default class Menu extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      menuShow: false,
-    };
+export default (props) => {
+  const dispatch = useDispatch();
+  const [menuShow , setMenuShow] = useState(false);
+  const MenuAction = () => {
+    $('.animated-icon1').toggleClass('open');
+    $('.mobileMenu').slideToggle();
+    setMenuShow(!menuShow);
+    if (!menuShow) {
+      $('.frame').css('background-color', 'rgba(255,255,255,1)')
+      $('.frame').css('box-shadow', '0 4px 8px 0 rgba(12,0,51,0.1)')
+    } else {
+      $('.frame').css('background-color', 'rgba(0, 0, 0, 0)')
+      $('.frame').css('box-shadow', 'none')
+    }
   }
-  componentDidMount() {
-    $('.nav').on('touchend', () => {
-      $('.animated-icon1').toggleClass('open');
-      $('.mobileMenu').slideToggle();
-      this.setState({ menuShow: !this.state.menuShow });
-      if (this.state.menuShow) {
-        $('.frame').css('background-color', 'rgba(255,255,255,1)')
-        $('.frame').css('box-shadow', '0 4px 8px 0 rgba(12,0,51,0.1)')
-      } else {
-        $('.frame').css('background-color', 'rgba(0, 0, 0, 0)')
-        $('.frame').css('box-shadow', 'none')
-      }
-    });
     $(document).scroll(() => {
       if (window.innerWidth > 768) {
         if ($(window).scrollTop() > (window.innerHeight - 100)) {
@@ -33,15 +29,14 @@ export default class Menu extends React.Component {
         }
       }
     });
-    if(this.props.sbot){
+    const sbot = useSelector((state) => state.sbot);
+    if(sbot){
       const script = document.createElement("script");
       script.src = "https://sbot.ai/chat-bot/bubble.min.js?id=cjnmzdg6a00136tqlvmkxlift";
       script.async = true;
       document.body.appendChild(script);
-      this.props.checkSbotAction(false);
+      dispatch({type:'CHECK_SBOT', payload: false});
     }
-  }
-  render() {
     return (
       <div className="frame">
         <div className="menu_s" />
@@ -51,24 +46,24 @@ export default class Menu extends React.Component {
           </Link>
           <div className="desktopMenu">
             <Link to="/introduction">
-              <div className={this.props.page === 'Introduction' ? 'menuR' : 'menu'}>
+              <div className={props.page === 'Introduction' ? 'menuR' : 'menu'}>
                 Introduction
                 </div>
             </Link>
             <Link to="/experience">
-              <div className={this.props.page === 'Experience' ? 'menuR' : 'menu'}>Experience</div>
+              <div className={props.page === 'Experience' ? 'menuR' : 'menu'}>Experience</div>
             </Link>
             <Link to="/skills">
-              <div className={this.props.page === 'Skills' ? 'menuR' : 'menu'}>Skills</div>
+              <div className={props.page === 'Skills' ? 'menuR' : 'menu'}>Skills</div>
             </Link>
             <Link to="/project">
-              <div className={this.props.page === 'Project' ? 'menuR' : 'menu'}>Project</div>
+              <div className={props.page === 'Project' ? 'menuR' : 'menu'}>Project</div>
             </Link>
             <Link to="/summary">
-              <div className={this.props.page === 'Summary' ? 'menuR' : 'menu'}>Summary</div>
+              <div className={props.page === 'Summary' ? 'menuR' : 'menu'}>Summary</div>
             </Link>
           </div>
-          <div className="nav">
+          <div className="nav" onTouchEnd={MenuAction}>
             <div className="animated-icon1">
               <span />
               <span />
@@ -78,22 +73,21 @@ export default class Menu extends React.Component {
         </div>
         <div className="mobileMenu">
           <Link to="/introduction">
-            <div className="Mmenu" style={{ background: this.props.page === 'Introduction' ? 'rgba(0,0,0,0.1)' : '' }}>Introduction</div>
+            <div className="Mmenu" style={{ background: props.page === 'Introduction' ? 'rgba(0,0,0,0.1)' : '' }}>Introduction</div>
           </Link>
           <Link to="/experience">
-            <div className="Mmenu" style={{ background: this.props.page === 'Experience' ? 'rgba(0,0,0,0.1)' : '' }}>Experience</div>
+            <div className="Mmenu" style={{ background: props.page === 'Experience' ? 'rgba(0,0,0,0.1)' : '' }}>Experience</div>
           </Link>
           <Link to="/skills">
-            <div className="Mmenu" style={{ background: this.props.page === 'Skills' ? 'rgba(0,0,0,0.1)' : '' }}>Skills</div>
+            <div className="Mmenu" style={{ background: props.page === 'Skills' ? 'rgba(0,0,0,0.1)' : '' }}>Skills</div>
           </Link>
           <Link to="/project">
-            <div className="Mmenu" style={{ background: this.props.page === 'Project' ? 'rgba(0,0,0,0.1)' : '' }}>Project</div>
+            <div className="Mmenu" style={{ background: props.page === 'Project' ? 'rgba(0,0,0,0.1)' : '' }}>Project</div>
           </Link>
           <Link to="/summary">
-            <div className="Mmenu" style={{ background: this.props.page === 'Summary' ? 'rgba(0,0,0,0.1)' : '' }}>Summary</div>
+            <div className="Mmenu" style={{ background: props.page === 'Summary' ? 'rgba(0,0,0,0.1)' : '' }}>Summary</div>
           </Link>
         </div>
       </div>
     );
   }
-}

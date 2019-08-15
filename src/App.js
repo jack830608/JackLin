@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Introduction from './containers/Introduction';
 import Experience from './containers/Experience';
@@ -7,15 +7,13 @@ import Skills from './containers/Skills';
 import Summary from './containers/Summary';
 import Home from './containers/Home';
 import Fion from './containers/Fion';
-import ScrollToTop from './components/ScrollToTop'
+import ScrollToTop from './components/ScrollToTop';
+import { useSelector } from 'react-redux';
 import './style.scss'
-export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
-  componentDidMount() {
+
+export default (props) => {
+  const sbot = useSelector(state => state.sbot);
+  useEffect(() => {
     window.addEventListener('scroll',
       () => {
         if (document.getElementById('container')) {
@@ -34,42 +32,40 @@ export default class App extends React.Component {
         }
       }
     )
-  }
-  render() {
-    return (
-      <Router>
-        <ScrollToTop>
-          <Route
-            exact path="/"
-            render={() => <Home {...this.props} />}
-          />
-          <Route
-            path="/introduction"
-            render={() => <Introduction {...this.props} />}
-          />
-          <Route
-            path="/experience"
-            render={() => <Experience {...this.props} />}
-          />
-          <Route
-            path="/project"
-            render={() => <Project {...this.props} />}
-          />
-          <Route
-            path="/skills"
-            render={() => <Skills {...this.props} />}
-          />
-          <Route
-            path="/summary"
-            render={() => <Summary {...this.props} />}
-          />
-          <Route
-            path="/fioncard"
-            render={() => <Fion {...this.props} />}
-          />
-        </ScrollToTop>
-      </Router>
-    );
+  })
 
-  }
+  return (
+    <Router>
+      <ScrollToTop>
+        <Route
+          exact path="/"
+          render={() => <Home />}
+        />
+        <Route
+          path="/introduction"
+          render={() => <Introduction />}
+        />
+        <Route
+          path="/experience"
+          render={() => <Experience />}
+        />
+        <Route
+          path="/project"
+          render={() => <Project />}
+        />
+        <Route
+          path="/skills"
+          render={() => <Skills />}
+        />
+        <Route
+          path="/summary"
+          render={() => <Summary />}
+        />
+        <Route
+          path="/fioncard"
+          render={() => <Fion />}
+        />
+      </ScrollToTop>
+    </Router>
+  );
 }

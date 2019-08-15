@@ -1,5 +1,4 @@
 import {createStore} from 'redux';
-import {checkSbot} from '../action';
 
 
 
@@ -19,14 +18,3 @@ const reducer = (state = initState , action) => {
     }
 }
 export const store = createStore(reducer);
-
-
-export const mapStateToProps = (state) => {
-    return state;
-};
-
-export const mapDispatchToProps = (dispatch) => {
-    return {
-        checkSbotAction: (payload) => dispatch(checkSbot(payload)),
-    };
-};

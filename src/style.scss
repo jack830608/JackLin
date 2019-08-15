@@ -459,7 +459,17 @@ body {
     margin: 3px auto;
     border-radius: 25px;
 }
+@keyframes Down {
+    from {
+        transform: translateY(3px);
+        opacity: 1;
+    }
 
+    to {
+        transform: translateY(35px);
+        opacity: 0;
+    }
+}
 .MouseDown {
     border-radius: 2px;
     background-clip: padding-box;
@@ -469,6 +479,7 @@ body {
     margin: 0 10px;
     transition: 1s;
     transform: translateY(3px);
+    animation: Down infinite 1.2s;
 }
 
 .summaryTitle1 {

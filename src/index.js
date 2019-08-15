@@ -2,16 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { connect, Provider } from 'react-redux';
-import { store, mapStateToProps, mapDispatchToProps } from './store';
+import { Provider } from 'react-redux';
+import { store } from './store';
 
-
-
-const App_redux = connect(mapStateToProps, mapDispatchToProps)(App);
 
 ReactDOM.render(
     <Provider store={store}>
-        <App_redux />
+        <App />
     </Provider>,
     document.getElementById('root')
 );

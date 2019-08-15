@@ -1,16 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Home_C from '../components/Home';
 import Animation from '../components/Loading/animation';
 
-export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      load: true,
-      op: 1,
-    };
-  }
-  componentDidMount() {
+export default () => {
+  useEffect(() => {
     function getBgUrl(el) {
       let bg = "";
       if (el.currentStyle) { // IE
@@ -29,13 +22,11 @@ export default class App extends React.Component {
       setTimeout(() => document.getElementById('loading').style.opacity = 0, 1500)
       setTimeout(() => document.getElementById('loading').style.display = 'none', 2500)
     };
-  }
-  render() {
-    return (
-      <div>
-        <Home_C />
-        <Animation/>
-      </div>
-    );
-  }
+  })
+  return (
+    <div>
+      <Home_C />
+      <Animation />
+    </div>
+  );
 }

@@ -128,25 +128,14 @@ class Loader extends React.Component {
 }
 
 
-export default class Container extends React.Component {
-    constructor(props){
-        super(props)
-            this.state = {
-                show: true
-            }
-    }
-    componentDidMount(){
-        setTimeout(() => this.setState({show: false}) , 2000)
-    }
-    render() {
-        const data = {
-            size: 200
-        };
+export default (props) => {
+    const data = {
+        size: 200
+    };
 
-        return (
-            <div id="loading"style={{opacity: this.props.op}}>
-                <Loader {...data} />
-            </div>
-        )
-    }
+    return (
+        <div id="loading" style={{ opacity: props.op }}>
+            <Loader {...data} />
+        </div>
+    )
 }
