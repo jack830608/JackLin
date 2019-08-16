@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default (props) => {
+
   const findDistance = (section) => {
     if (document.getElementById(section)) {
       for (let i = window.pageYOffset; i < document.getElementById(section).offsetTop; i++) {

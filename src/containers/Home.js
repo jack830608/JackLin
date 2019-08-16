@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import Home_C from '../components/Home';
+import React, { useEffect } from 'react';
+import Home from '../components/Home';
 import Animation from '../components/Loading/animation';
 
-export default () => {
+export default (props) => {
+
   useEffect(() => {
     function getBgUrl(el) {
       let bg = "";
@@ -25,7 +26,7 @@ export default () => {
   })
   return (
     <div>
-      <Home_C />
+      <Home />
       <Animation />
     </div>
   );

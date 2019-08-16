@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Link } from "react-router-dom";
-export default () => {
-  
+
+export default (props) => {
+
   const [introduction, setIntroduction] = useState('none')
   const [experience, setExperience] = useState('none')
   const [skills, setSkills] = useState('none')

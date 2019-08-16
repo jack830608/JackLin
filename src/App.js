@@ -8,11 +8,10 @@ import Summary from './containers/Summary';
 import Home from './containers/Home';
 import Fion from './containers/Fion';
 import ScrollToTop from './components/ScrollToTop';
-import { useSelector } from 'react-redux';
 import './style.scss'
 
 export default (props) => {
-  const sbot = useSelector(state => state.sbot);
+
   useEffect(() => {
     window.addEventListener('scroll',
       () => {

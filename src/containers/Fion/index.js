@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './style.scss'
 
-export default () => {
+export default (props) => {
+
     const [zIndex, setZIndex] = useState(2);
     const card1 = (
         <div
