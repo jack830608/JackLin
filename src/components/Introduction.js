@@ -27,7 +27,7 @@ export default (props) => {
               </div>
             </div>
             <div className="logoData">
-              我是林偉捷，對於 Coding 抱持很大的熱誠；對於我來說，寫程式是為了讓生活更便利＆解決生活遇到的問題，所以我很樂於挑戰於一些新的事物，也很樂於學習更多的新技能。主要擅長於網頁的前後端開發，熱衷於追求新知識、新的技術，享受軟體開發完成的成就感，並能夠在團隊中快速找到自我定位。
+            I'm Jack Lin, and I have a great enthusiasm for coding. For me, coding is to make life more convenient & to solve problems in life, so I am happy to challenge new things and learn many new skills. Mainly good at front-end and back-end development of web, passionate about pursuing new knowledge, new technologies, enjoying the sense of accomplishment of software development, and being able to quickly find self-positioning in the team.
                 </div>
             <br />
             <li className="list">Web Developer</li>
