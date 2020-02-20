@@ -110,6 +110,38 @@ export default (props) => {
               </ul>
             </div>
           </div>
+          <div className="cd-timeline-block" >
+            <div className="cd-timeline-img cd-picture">
+            </div>
+
+            <div className="cd-timeline-content">
+              <h2>Vpon</h2>
+              <div className="timeline-content-info">
+                <span className="timeline-content-info-title" style={{marginRight: "10px"}}>
+                  Software Engineer
+                </span>
+                <span className="timeline-content-info-date">
+                  <i className="fa fa-calendar-o" aria-hidden="true">
+                  2019-11 ~  Now
+                  </i>
+                  </span>
+              </div>
+              <p>
+                Vpon is an advertising company combining big data ,for me it's completely different from my previous job. There are more then 70 engineers in Vpon so we can exchange skills with each other and exposed to many new skills not limited to the front-end.
+                  </p>
+              <ul className="content-skills">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Docker</li>
+                <li>MySQL</li>
+                <li>Shell script</li>
+              </ul>
+            </div>
+          </div>
         </section>
       </div>
     </div>

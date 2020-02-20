@@ -31,8 +31,8 @@ export default (props) => {
               </div>
             </div>
             <div className="logoData">
-              I'm Jack Lin, and I have a great enthusiasm for coding. For me, coding is to make life more convenient & to solve problems in life, so I am happy to challenge new things and learn many new skills. Mainly good at front-end and back-end development of web, passionate about pursuing new knowledge, new technologies, enjoying the sense of accomplishment of software development, and being able to quickly find self-positioning in the team.
-                </div>
+              I have three years of experience in developing back-end and front-end and passionate about pursuing new knowledge, new technologies, enjoying the sense of accomplishment of software development. For me coding is to make life more convenient & solve problems in life, so I am happy to challenge new things and learn many new skills.
+            </div>
             <br />
             <li className="list">Web Developer</li>
             <li className="list">Taipei，Taiwan</li>
