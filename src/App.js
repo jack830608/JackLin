@@ -56,10 +56,10 @@ export default (props) => {
           path="/skills"
           render={() => <Skills />}
         />
-        <Route
+        {/* <Route
           path="/summary"
           render={() => <Summary />}
-        />
+        /> */}
         <Route
           path="/fioncard"
           render={() => <Fion />}

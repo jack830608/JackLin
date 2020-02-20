@@ -25,7 +25,8 @@ export default (props) => {
           <li>Express</li>
           <li>MongoDB、Mongoose</li>
           <li>RESTful API</li>
-          <li>串接第三方 API</li>
+          <li>Docker</li>
+          <li>Connect third-party API</li>
           <li>Nginx</li>
         </div>
         <div className="SkillArrowRight2"></div>

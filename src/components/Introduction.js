@@ -15,11 +15,15 @@ export default (props) => {
               <h1 className="h1name" style={{ fontWeight: 500 }}>
                 林偉捷（Jack Lin）
                   </h1>
-              <div
+              {/* <div
                 style={{ marginRight: '10px', cursor: 'pointer' }}
                 onClick={() => window.open('https://www.facebook.com/WEIJIE.LIN7777', '_blank')}
               >
                 <img src="/images/facebook.png" width="20px" />
+              </div> */}
+              <div style={{ marginRight: '10px', cursor: 'pointer' }}
+                onClick={() => window.open('https://www.linkedin.com/in/jack1in', '_blank')}>
+                <img src="/images/linkedin.png" width="20px" />
               </div>
               <div style={{ cursor: 'pointer' }}
                 onClick={() => window.open('https://line.me/ti/p/0f4vdsbN3Z', '_blank')}>
@@ -27,7 +31,7 @@ export default (props) => {
               </div>
             </div>
             <div className="logoData">
-            I'm Jack Lin, and I have a great enthusiasm for coding. For me, coding is to make life more convenient & to solve problems in life, so I am happy to challenge new things and learn many new skills. Mainly good at front-end and back-end development of web, passionate about pursuing new knowledge, new technologies, enjoying the sense of accomplishment of software development, and being able to quickly find self-positioning in the team.
+              I'm Jack Lin, and I have a great enthusiasm for coding. For me, coding is to make life more convenient & to solve problems in life, so I am happy to challenge new things and learn many new skills. Mainly good at front-end and back-end development of web, passionate about pursuing new knowledge, new technologies, enjoying the sense of accomplishment of software development, and being able to quickly find self-positioning in the team.
                 </div>
             <br />
             <li className="list">Web Developer</li>

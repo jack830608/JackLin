@@ -60,9 +60,9 @@ export default (props) => {
             <Link to="/project">
               <div className={props.page === 'Project' ? 'menuR' : 'menu'}>Project</div>
             </Link>
-            <Link to="/summary">
+            {/* <Link to="/summary">
               <div className={props.page === 'Summary' ? 'menuR' : 'menu'}>Summary</div>
-            </Link>
+            </Link> */}
           </div>
           <div className="nav" onTouchEnd={MenuAction}>
             <div className="animated-icon1">
@@ -85,9 +85,9 @@ export default (props) => {
           <Link to="/project">
             <div className="Mmenu" style={{ background: props.page === 'Project' ? 'rgba(0,0,0,0.1)' : '' }}>Project</div>
           </Link>
-          <Link to="/summary">
+          {/* <Link to="/summary">
             <div className="Mmenu" style={{ background: props.page === 'Summary' ? 'rgba(0,0,0,0.1)' : '' }}>Summary</div>
-          </Link>
+          </Link> */}
         </div>
       </div>
     );
