@@ -31,7 +31,7 @@ export default (props) => {
               </div>
             </div>
             <div className="logoData">
-              I have three years of experience in developing back-end and front-end and passionate about pursuing new knowledge, new technologies, enjoying the sense of accomplishment of software development. For me coding is to make life more convenient & solve problems in life, so I am happy to challenge new things and learn many new skills.
+              I have three years of experience in developing back-end and front-end and passionate about pursuing new knowledge, new skills, enjoying the sense of accomplishment of software development. For me , coding is to make life more convenient & solve problems in life, so I am happy to challenge new things and learn many new skills.
             </div>
             <br />
             <li className="list">Web Developer</li>

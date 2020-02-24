@@ -48,7 +48,7 @@ export default (props) => {
             </div>
 
             <div className="cd-timeline-content">
-              <h2>潮語傳媒股份有限公司(MemePR)</h2>
+              <h2>MemePR - 潮語傳媒股份有限公司</h2>
               <div className="timeline-content-info">
                 <span className="timeline-content-info-title" style={{marginRight: "10px"}}>
                   Front-end
@@ -84,7 +84,7 @@ export default (props) => {
             </div>
 
             <div className="cd-timeline-content">
-              <h2>Tripmoment時刻旅行</h2>
+              <h2>Tripmoment - 時刻旅行</h2>
               <div className="timeline-content-info">
                 <span className="timeline-content-info-title" style={{marginRight: "10px"}}>
                   Front-end
@@ -115,7 +115,7 @@ export default (props) => {
             </div>
 
             <div className="cd-timeline-content">
-              <h2>Vpon</h2>
+              <h2>Vpon - 威朋大數據集團</h2>
               <div className="timeline-content-info">
                 <span className="timeline-content-info-title" style={{marginRight: "10px"}}>
                   Software Engineer
