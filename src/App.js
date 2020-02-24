@@ -4,8 +4,9 @@ import Introduction from './containers/Introduction';
 import Experience from './containers/Experience';
 import Project from './containers/Project';
 import Skills from './containers/Skills';
-import Summary from './containers/Summary';
+// import Summary from './containers/Summary';
 import Home from './containers/Home';
+import All from './containers/All';
 import Fion from './containers/Fion';
 import ScrollToTop from './components/ScrollToTop';
 import './style.scss'
@@ -38,7 +39,8 @@ export default (props) => {
       <ScrollToTop>
         <Route
           exact path="/"
-          render={() => <Home />}
+          render={() => <Home />
+          }
         />
         <Route
           path="/introduction"
@@ -63,6 +65,10 @@ export default (props) => {
         <Route
           path="/fioncard"
           render={() => <Fion />}
+        />
+        <Route
+          path="/all"
+          render={() => <All />}
         />
       </ScrollToTop>
     </Router>

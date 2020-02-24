@@ -47,18 +47,18 @@ export default (props) => {
           </Link>
           <div className="desktopMenu">
             <Link to="/introduction">
-              <div className={props.page === 'Introduction' ? 'menuR' : 'menu'}>
+              <div className="menu">
                 Introduction
                 </div>
             </Link>
             <Link to="/experience">
-              <div className={props.page === 'Experience' ? 'menuR' : 'menu'}>Experience</div>
+              <div className="menu">Experience</div>
             </Link>
             <Link to="/skills">
-              <div className={props.page === 'Skills' ? 'menuR' : 'menu'}>Skills</div>
+              <div className="menu">Skills</div>
             </Link>
             <Link to="/project">
-              <div className={props.page === 'Project' ? 'menuR' : 'menu'}>Project</div>
+              <div className="menu">Project</div>
             </Link>
             {/* <Link to="/summary">
               <div className={props.page === 'Summary' ? 'menuR' : 'menu'}>Summary</div>
