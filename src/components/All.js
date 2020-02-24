@@ -25,24 +25,27 @@ export default (props) => {
     <div>
       <div class="allBanner">
         <div class="allFilter">
-          <div class="allWord">
-            {word}<span class="allLine" style={{ animation: animation }}>｜</span>
-            <div class="allBox">
-              <a href="https://www.facebook.com/WEIJIE.LIN7777" target="_blank">
-                <img src="/images/all_facebook.svg"></img>
-              </a>
-              <a href="https://www.linkedin.com/in/jack1in/" target="_blank">
-                <img src="/images/all_linkedin.svg"></img>
-              </a>
-              <a href="https://github.com/jack830608" target="_blank">
-                <img src="/images/all_github.svg"></img>
-              </a>
-              <a href="https://line.me/ti/p/0f4vdsbN3Z" target="_blank">
-                <img src="/images/all_line.svg"></img>
-              </a>
-              <a href="mailto:jack830608@gmail.com" target="_blank">
-                <img src="/images/all_google.svg"></img>
-              </a>
+          <div class="allHead">
+            <div class="allWord">
+              {word}
+              <span class="allLine" style={{ animation: animation }}>｜</span>
+              <div class="allBox">
+                <a href="https://www.facebook.com/WEIJIE.LIN7777" target="_blank">
+                  <img src="/images/all_facebook.svg"></img>
+                </a>
+                <a href="https://www.linkedin.com/in/jack1in/" target="_blank">
+                  <img src="/images/all_linkedin.svg"></img>
+                </a>
+                <a href="https://github.com/jack830608" target="_blank">
+                  <img src="/images/all_github.svg"></img>
+                </a>
+                <a href="https://line.me/ti/p/0f4vdsbN3Z" target="_blank">
+                  <img src="/images/all_line.svg"></img>
+                </a>
+                <a href="mailto:jack830608@gmail.com" target="_blank">
+                  <img src="/images/all_google.svg"></img>
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@ p {
 }
 
 .allBanner {
-    background: linear-gradient(105deg,#141A24 75%, #ECF5FF );
+    background: linear-gradient(105deg,rgb(31, 40, 56) 70%, rgb(47, 63, 92) );
     height: 100vh;
     width: 100vw;
     position: relative;
@@ -20,11 +20,17 @@ p {
     position: absolute;
     width: 100vw;
     height: 100vh;
+
+}
+.allHead{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: rgba(0,0,0,0.5)
 }
-
 .allWord {
     font-size: 110px;
     font-weight: bold;
