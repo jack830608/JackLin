@@ -618,7 +618,6 @@ p {
     border-radius: 5px;
     text-decoration: none;
     position: relative;
-
     &:after {
         background: none repeat scroll 0 0 transparent;
         bottom: 0;
@@ -631,13 +630,37 @@ p {
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
     }
-
     &:hover:after {
         width: 100%;
         left: 0;
     }
 }
-
+.menuR {
+    margin: 0 18px;
+    padding: 10px 2px;
+    cursor: default;
+    letter-spacing: 2px;
+    color: #ECF5FF;
+    font-size: 14px;
+    font-family: Kanit;
+    -webkit-transition: all 150ms ease;
+    transition: all 150ms ease;
+    border-radius: 5px;
+    position: relative;
+    &:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 1px;
+        left: 50%;
+        position: absolute;
+        background: #ECF5FF;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 100%;
+        left: 0;
+    }
+}
 .Mmenu {
     text-align: center;
     padding: 10px 0;

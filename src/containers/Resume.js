@@ -30,43 +30,59 @@ export default (props) => {
         setShow(true)
       }, 2500)
     };
-  })
-  useEffect(() => {
     window.addEventListener('scroll',
       () => {
-        if (document.getElementById('Introduction')) {
-          const IntroductionTop = document.getElementById('Introduction').getBoundingClientRect().top;
-          const IntroductionBottom = document.getElementById('Introduction').getBoundingClientRect().bottom;
-          const windowsHeight = window.innerHeight - 500;
-          if (IntroductionTop < windowsHeight && IntroductionBottom >= 0) {
-            document.getElementById('Introduction').style.opacity = 1
-          } else if (IntroductionBottom < 0) {
-            document.getElementById('Introduction').style.opacity = 0
-          }
+        const Banner = document.getElementById('Banner')
+        const BannerTop = Banner.getBoundingClientRect().top;
+        const BannerBottom = Banner.getBoundingClientRect().bottom;
+        const Introduction = document.getElementById('Introduction')
+        const IntroductionMenu = document.getElementById('IntroductionMenu')
+        const IntroductionTop = Introduction.getBoundingClientRect().top;
+        const IntroductionBottom = Introduction.getBoundingClientRect().bottom;
+        const Experience = document.getElementById('Experience')
+        const ExperienceMenu = document.getElementById('ExperienceMenu')
+        const ExperienceTop = Experience.getBoundingClientRect().top;
+        const ExperienceBottom = Experience.getBoundingClientRect().bottom;
+        const Skills = document.getElementById('Skills')
+        const SkillsMenu = document.getElementById('SkillsMenu')
+        const SkillsTop = Skills.getBoundingClientRect().top;
+        const SkillsBottom = Skills.getBoundingClientRect().bottom;
+        const windowsHeight = window.innerHeight - 500;
+        if (BannerTop < windowsHeight && BannerBottom >= 0) {
+          Introduction.style.opacity = 0
+          Experience.style.opacity = 0
+          Skills.style.opacity = 0
+          IntroductionMenu.className="menu"
+          ExperienceMenu.className="menu"
+          SkillsMenu.className="menu"
         }
-        if (document.getElementById('Experience')) {
-          const ExperienceTop = document.getElementById('Experience').getBoundingClientRect().top;
-          const ExperienceBottom = document.getElementById('Experience').getBoundingClientRect().bottom;
-          const windowsHeight = window.innerHeight - 500;
-          if (ExperienceTop < windowsHeight && ExperienceBottom >= 0) {
-            document.getElementById('Experience').style.opacity = 1
-          } else if (ExperienceBottom < 0) {
-            document.getElementById('Experience').style.opacity = 0
-          }
+        if (IntroductionTop < windowsHeight && IntroductionBottom >= 0) {
+          Introduction.style.opacity = 1
+          Experience.style.opacity = 0
+          Skills.style.opacity = 0
+          IntroductionMenu.className="menuR"
+          ExperienceMenu.className="menu"
+          SkillsMenu.className="menu"
         }
-        if (document.getElementById('Skills')) {
-          const SkillsTop = document.getElementById('Skills').getBoundingClientRect().top;
-          const SkillsBottom = document.getElementById('Skills').getBoundingClientRect().bottom;
-          const windowsHeight = window.innerHeight - 500;
-          if (SkillsTop < windowsHeight && SkillsBottom >= 0) {
-            document.getElementById('Skills').style.opacity = 1
-          } else if (SkillsBottom < 0) {
-            document.getElementById('Skills').style.opacity = 0
-          }
+        if (ExperienceTop < windowsHeight && ExperienceBottom >= 0 ) {
+          Introduction.style.opacity = 0
+          Experience.style.opacity = 1
+          Skills.style.opacity = 0
+          IntroductionMenu.className="menu"
+          ExperienceMenu.className="menuR"
+          SkillsMenu.className="menu"
+        }
+        if (SkillsTop < windowsHeight && SkillsBottom >= 0 ) {
+          Introduction.style.opacity = 0
+          Experience.style.opacity = 0
+          Skills.style.opacity = 1
+          IntroductionMenu.className="menu"
+          ExperienceMenu.className="menu"
+          SkillsMenu.className="menuR"
         }
       }
     )
-  })
+  }, [])
   return (
     <div>
       <Animation />

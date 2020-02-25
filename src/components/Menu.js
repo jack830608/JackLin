@@ -46,10 +46,10 @@ export default (props) => {
       <div className="frameSection1">
         <img src="images/icon_nobackground.png" className="logo" onClick={() => findDistance('Banner')} />
         <div className="desktopMenu">
-          <div className="menu" onClick={() => findDistance('Introduction')}>Introduction</div>
-          <div className="menu" onClick={() => findDistance('Experience')}>Experience</div>
-          <div className="menu" onClick={() => findDistance('Skills')}>Skills</div>
-          <div className="menu" onClick={() => findDistance('Project')}>Project</div>
+          <div id="IntroductionMenu" className="menu" onClick={() => findDistance('Introduction')}>Introduction</div>
+          <div id="ExperienceMenu" className="menu" onClick={() => findDistance('Experience')}>Experience</div>
+          <div id="SkillsMenu" className="menu" onClick={() => findDistance('Skills')}>Skills</div>
+          <div id="ProjectMenu" className="menu" onClick={() => findDistance('Project')}>Project</div>
         </div>
         <div className="nav" onTouchEnd={MenuAction}>
           <div className="animated-icon1">
