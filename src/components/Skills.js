@@ -11,7 +11,7 @@ export default (props) => {
         </h1>
       </div>
       <div className="skillsBox">
-        <div className="skillChartBox">
+        {/* <div className="skillChartBox">
           <GaugeChart id="gauge-chart1"
             nrOfLevels={30}
             colors={["#FF5F6D", "#FFC371"]}
@@ -120,7 +120,7 @@ export default (props) => {
             percent={0.7}
           />
           <div>Shell Script</div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
