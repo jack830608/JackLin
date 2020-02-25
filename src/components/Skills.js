@@ -4,6 +4,7 @@ import GaugeChart from 'react-gauge-chart';
 export default (props) => {
 
   return (
+    <div className="Skills">
     <div id="Skills">
       <div className='skillsTitle'>
         <h1>
@@ -122,6 +123,7 @@ export default (props) => {
           <div>Shell Script</div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

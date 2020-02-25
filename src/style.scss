@@ -113,12 +113,17 @@ p {
 // Banner end
 
 // Introduction Start
+.Introduction{
+    width: 100%;
+    background: #0F0F0F;
+}
 #Introduction {
     width: 100%;
-    padding: 60px 10%;
+    padding: 70px 10%;
     box-sizing: border-box;
-    background: #0F0F0F;
     position: relative;
+    opacity: 0;
+    transition: 1s linear;
 }
 
 #Introduction::before {
@@ -143,7 +148,7 @@ p {
 .introductionTitle h1 {
     z-index: 1;
     font-size: 4em;
-    top: 150px;
+    top: 160px;
     left: 17%;
     letter-spacing: 2px;
     position: absolute;
@@ -209,12 +214,17 @@ p {
 
 // Introduction End
 // Experience Start
+.Experience{
+    width: 100%;
+    background: #0F0F0F;
+}
 #Experience {
     width: 100%;
-    padding: 60px 10%;
+    padding: 70px 10%;
     box-sizing: border-box;
-    background: #0F0F0F;
     position: relative;
+    opacity: 0;
+    transition: 1s linear;
 }
 
 #Experience::before {
@@ -237,7 +247,7 @@ p {
 .experienceTitle h1 {
     z-index: 1;
     font-size: 4em;
-    top: 150px;
+    top: 160px;
     left: 17%;
     letter-spacing: 2px;
     position: absolute;
@@ -254,12 +264,17 @@ p {
 
 // Experience End
 // Skills Start
+.Skills{
+    width: 100%;
+    background: #0F0F0F;
+}
 #Skills {
     width: 100%;
-    padding: 60px 10%;
+    padding: 70px 10%;
     box-sizing: border-box;
-    background: #0F0F0F;
     position: relative;
+    opacity: 0;
+    transition: 1s linear;
 }
 
 #Skills::before {
@@ -282,7 +297,7 @@ p {
 .skillsTitle h1 {
     z-index: 1;
     font-size: 4em;
-    top: 150px;
+    top: 160px;
     left: 17%;
     letter-spacing: 2px;
     position: absolute;
@@ -313,37 +328,12 @@ p {
 }
 
 // Skills End
-.Skills,
-.Skills h1 {
-    background: url('/images/Skills.jpg') no-repeat;
-    background-position: top;
-    background-size: 100%;
-}
 
 .Project,
 .Project h1 {
     background: url('/images/Project.jpg') no-repeat;
     background-position: top;
     background-size: 100%;
-}
-
-.Experience h1,
-.Skills h1,
-.Project h1,
-.Summary h1 {
-    font-size: 5em;
-    left: 0;
-    letter-spacing: 8px;
-    padding-top: 25px;
-    position: absolute;
-    text-align: center;
-    top: 40vh;
-    width: 100%;
-    cursor: default;
-    color: transparent !important;
-    -webkit-background-clip: text;
-    font-weight: 300;
-    font-family: Kanit;
 }
 
 .list {
@@ -432,11 +422,14 @@ p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px #8A8A8A, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 6px #0F0F0F, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .cd-timeline-img {
-    background: #272727;
+    background: url('/images/Experience.jpg') no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -456,12 +449,6 @@ p {
     color: rgba(255, 255, 255, 0.9);
     font-size: 14px;
     font-weight: 300;
-}
-
-.content-skills {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 14px;
-    line-height: 22px;
 }
 
 .cd-timeline-content {
@@ -504,7 +491,7 @@ p {
 }
 
 .cd-timeline-content p {
-    margin: 1em 0;
+    margin-top: 1em;
     line-height: 1.6;
 }
 
@@ -543,7 +530,7 @@ p {
     .cd-timeline-content {
         color: white;
         margin-left: 0;
-        padding: 1.6em;
+        padding: 1.4em;
         width: 36%;
         margin: 0 5%
     }

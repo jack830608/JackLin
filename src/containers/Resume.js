@@ -31,14 +31,50 @@ export default (props) => {
       }, 2500)
     };
   })
+  useEffect(() => {
+    window.addEventListener('scroll',
+      () => {
+        if (document.getElementById('Introduction')) {
+          const IntroductionTop = document.getElementById('Introduction').getBoundingClientRect().top;
+          const IntroductionBottom = document.getElementById('Introduction').getBoundingClientRect().bottom;
+          const windowsHeight = window.innerHeight - 500;
+          if (IntroductionTop < windowsHeight && IntroductionBottom >= 0) {
+            document.getElementById('Introduction').style.opacity = 1
+          } else if (IntroductionBottom < 0) {
+            document.getElementById('Introduction').style.opacity = 0
+          }
+        }
+        if (document.getElementById('Experience')) {
+          const ExperienceTop = document.getElementById('Experience').getBoundingClientRect().top;
+          const ExperienceBottom = document.getElementById('Experience').getBoundingClientRect().bottom;
+          const windowsHeight = window.innerHeight - 500;
+          if (ExperienceTop < windowsHeight && ExperienceBottom >= 0) {
+            document.getElementById('Experience').style.opacity = 1
+          } else if (ExperienceBottom < 0) {
+            document.getElementById('Experience').style.opacity = 0
+          }
+        }
+        if (document.getElementById('Skills')) {
+          const SkillsTop = document.getElementById('Skills').getBoundingClientRect().top;
+          const SkillsBottom = document.getElementById('Skills').getBoundingClientRect().bottom;
+          const windowsHeight = window.innerHeight - 500;
+          if (SkillsTop < windowsHeight && SkillsBottom >= 0) {
+            document.getElementById('Skills').style.opacity = 1
+          } else if (SkillsBottom < 0) {
+            document.getElementById('Skills').style.opacity = 0
+          }
+        }
+      }
+    )
+  })
   return (
     <div>
       <Animation />
-      <Menu/>
-      <Banner show={show}/>
-      <Introduction/>
-      <Experience/>
-      <Skills/>
+      <Menu />
+      <Banner show={show} />
+      <Introduction />
+      <Experience />
+      <Skills />
     </div>
   );
 }
