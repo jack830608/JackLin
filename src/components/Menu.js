@@ -5,10 +5,8 @@ import { useSelector, useDispatch } from 'react-redux';
 
 export default (props) => {
   const findDistance = (section) => {
-    if (document.getElementById(section)) {
-      for (let i = window.pageYOffset; i < document.getElementById(section).offsetTop; i++) {
-        setTimeout(() => window.scrollTo(0, i), i / 3);
-      }
+    if (section && document.getElementById(section)) {
+      window.scrollTo({ 'behavior': 'smooth', 'top': document.getElementById(section).offsetTop })
     }
   }
   const dispatch = useDispatch();
@@ -46,12 +44,12 @@ export default (props) => {
     <div className="frame">
       <div className="menu_s" />
       <div className="frameSection1">
-        <img src="images/icon_nobackground.png" className="logo" onClick={()=>findDistance('Banner')}/>
+        <img src="images/icon_nobackground.png" className="logo" onClick={() => findDistance('Banner')} />
         <div className="desktopMenu">
-          <div className="menu"onClick={()=>findDistance('Introduction')}>Introduction</div>
-          <div className="menu"onClick={()=>findDistance('Experience')}>Experience</div>
-          <div className="menu"onClick={()=>findDistance('Skills')}>Skills</div>
-          <div className="menu"onClick={()=>findDistance('Project')}>Project</div>
+          <div className="menu" onClick={() => findDistance('Introduction')}>Introduction</div>
+          <div className="menu" onClick={() => findDistance('Experience')}>Experience</div>
+          <div className="menu" onClick={() => findDistance('Skills')}>Skills</div>
+          <div className="menu" onClick={() => findDistance('Project')}>Project</div>
         </div>
         <div className="nav" onTouchEnd={MenuAction}>
           <div className="animated-icon1">
@@ -62,33 +60,33 @@ export default (props) => {
         </div>
       </div>
       <div className="mobileMenu">
-          <div
-            className="Mmenu"
-            style={{ background: props.page === 'Introduction' ? 'rgba(0,0,0,0.1)' : '' }}
-            onClick={()=>findDistance('Introduction')}
-          >
-            Introduction
+        <div
+          className="Mmenu"
+          style={{ background: props.page === 'Introduction' ? 'rgba(0,0,0,0.1)' : '' }}
+          onClick={() => findDistance('Introduction')}
+        >
+          Introduction
           </div>
-          <div
-            className="Mmenu"
-            style={{ background: props.page === 'Experience' ? 'rgba(0,0,0,0.1)' : '' }}
-            onClick={()=>findDistance('Experience')}
-          >
-            Experience
+        <div
+          className="Mmenu"
+          style={{ background: props.page === 'Experience' ? 'rgba(0,0,0,0.1)' : '' }}
+          onClick={() => findDistance('Experience')}
+        >
+          Experience
           </div>
-          <div
-            className="Mmenu"
-            style={{ background: props.page === 'Skills' ? 'rgba(0,0,0,0.1)' : '' }}
-            onClick={()=>findDistance('Skills')}
-          >
-            Skills
+        <div
+          className="Mmenu"
+          style={{ background: props.page === 'Skills' ? 'rgba(0,0,0,0.1)' : '' }}
+          onClick={() => findDistance('Skills')}
+        >
+          Skills
           </div>
-          <div
-            className="Mmenu"
-            style={{ background: props.page === 'Project' ? 'rgba(0,0,0,0.1)' : '' }}
-            onClick={()=>findDistance('Project')}
-          >
-            Project
+        <div
+          className="Mmenu"
+          style={{ background: props.page === 'Project' ? 'rgba(0,0,0,0.1)' : '' }}
+          onClick={() => findDistance('Project')}
+        >
+          Project
           </div>
       </div>
     </div>

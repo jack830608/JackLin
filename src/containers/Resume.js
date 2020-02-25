@@ -4,6 +4,7 @@ import Banner from '../components/Banner';
 import Animation from '../components/Loading/animation';
 import Introduction from '../components/Introduction';
 import Experience from '../components/Experience';
+import Skills from '../components/Skills';
 
 export default (props) => {
   const [show, setShow] = useState(false)
@@ -37,6 +38,7 @@ export default (props) => {
       <Banner show={show}/>
       <Introduction/>
       <Experience/>
+      <Skills/>
     </div>
   );
 }

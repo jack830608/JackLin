@@ -2,10 +2,8 @@ import React, { useEffect, useState } from 'react';
 
 export default (props) => {
   const findDistance = (section) => {
-    if (document.getElementById(section)) {
-      for (let i = window.pageYOffset; i < document.getElementById(section).offsetTop; i++) {
-        setTimeout(() => window.scrollTo(0, i), i / 3);
-      }
+    if (section && document.getElementById(section)) {
+      window.scrollTo({ 'behavior': 'smooth', 'top': document.getElementById(section).offsetTop })
     }
   }
   const [word, setWord] = useState('')
@@ -31,7 +29,7 @@ export default (props) => {
     }
   }, [props.show])
   return (
-    <div class="banner">
+    <div id="Banner">
       <div class="filter">
         <div class="head">
           <div class="word">

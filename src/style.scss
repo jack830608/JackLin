@@ -6,7 +6,7 @@ p {
 }
 
 // Banner Start
-.banner {
+#Banner {
     background: linear-gradient(105deg, rgb(32, 25, 36) 75%, rgba(52, 48, 56, 0.6));
     height: 100vh;
     width: 100vw;
@@ -115,18 +115,19 @@ p {
 // Introduction Start
 #Introduction {
     width: 100%;
-    padding:60px 10%;
+    padding: 60px 10%;
     box-sizing: border-box;
     background: #0F0F0F;
     position: relative;
 }
-#Introduction::before{
+
+#Introduction::before {
     content: 'About';
-    color:#080808;
-    font-size:9em;
+    color: #080808;
+    font-size: 9em;
     font-weight: 500;
     position: absolute;
-    left:10%;
+    left: 10%;
 }
 
 .introductionTitle,
@@ -142,7 +143,7 @@ p {
 .introductionTitle h1 {
     z-index: 1;
     font-size: 4em;
-    top:150px;
+    top: 150px;
     left: 17%;
     letter-spacing: 2px;
     position: absolute;
@@ -152,16 +153,19 @@ p {
     font-weight: 100;
     font-family: Kanit;
 }
-.introductionBox{
+
+.introductionBox {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top:250px;
+    margin-top: 250px;
 }
-.introductionRight{
-    width:45%;
+
+.introductionRight {
+    width: 45%;
 }
+
 .introductionRight h1 {
     z-index: 1;
     font-size: 10em;
@@ -173,51 +177,57 @@ p {
     font-weight: 100;
     font-family: Kanit;
 }
-.introductionLeft{
-    width:55%;
-    color:#ECF5FF;
+
+.introductionLeft {
+    width: 55%;
+    color: #ECF5FF;
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
-    p{
-        margin:10px 20px ;
+
+    p {
+        margin: 10px 20px;
     }
 }
-.introductionButton{
+
+.introductionButton {
     background: #ECF5FF;
     color: #0F0F0F;
-    padding:10px 20px;
-    width:fit-content;
+    padding: 10px 20px;
+    width: fit-content;
     font-weight: 500;
-    margin:50px 0 0 20px;
+    margin: 50px 0 0 20px;
     font-family: Kanit;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.2s linear;
-    &:hover{
+
+    &:hover {
         transform: translateY(-4px);
     }
 }
+
 // Introduction End
 // Experience Start
 #Experience {
     width: 100%;
-    padding:60px 10%;
+    padding: 60px 10%;
     box-sizing: border-box;
     background: #0F0F0F;
     position: relative;
 }
-#Experience::before{
+
+#Experience::before {
     content: 'Experience';
-    color:#080808;
-    font-size:9em;
+    color: #080808;
+    font-size: 9em;
     font-weight: 500;
     position: absolute;
-    left:10%;
+    left: 10%;
 }
 
 .experienceTitle,
-.experienceTitle h1{
+.experienceTitle h1 {
     background: url('/images/Experience.jpg') no-repeat;
     background-position: center;
     background-size: 100%;
@@ -227,7 +237,7 @@ p {
 .experienceTitle h1 {
     z-index: 1;
     font-size: 4em;
-    top:150px;
+    top: 150px;
     left: 17%;
     letter-spacing: 2px;
     position: absolute;
@@ -236,12 +246,73 @@ p {
     -webkit-background-clip: text;
     font-weight: 100;
     font-family: Kanit;
-} 
-.experienceBox{
-    margin-top:250px;
 }
-// Experience End
 
+.experienceBox {
+    margin-top: 250px;
+}
+
+// Experience End
+// Skills Start
+#Skills {
+    width: 100%;
+    padding: 60px 10%;
+    box-sizing: border-box;
+    background: #0F0F0F;
+    position: relative;
+}
+
+#Skills::before {
+    content: 'Skills';
+    color: #080808;
+    font-size: 9em;
+    font-weight: 500;
+    position: absolute;
+    left: 10%;
+}
+
+.skillsTitle,
+.skillsTitle h1 {
+    background: url('/images/skills.jpg') no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.skillsTitle h1 {
+    z-index: 1;
+    font-size: 4em;
+    top: 150px;
+    left: 17%;
+    letter-spacing: 2px;
+    position: absolute;
+    cursor: default;
+    color: transparent !important;
+    -webkit-background-clip: text;
+    font-weight: 100;
+    font-family: Kanit;
+}
+
+.skillsBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 250px;
+    flex-wrap: wrap;
+}
+
+.skillChartBox {
+    width: 23%;
+    color: #ECF5FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Kanit;
+}
+
+// Skills End
 .Skills,
 .Skills h1 {
     background: url('/images/Skills.jpg') no-repeat;
@@ -401,7 +472,8 @@ p {
     border-radius: 5px;
     padding: 1em;
     color: #ECF5FF;
-    h2{
+
+    h2 {
         font-family: Kanit;
     }
 }
@@ -1019,161 +1091,6 @@ body {
     display: none;
 }
 
-.ArrowBox1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.ArrowBox2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px 0;
-    transform: translateX(70px);
-}
-
-.ArrowBox3 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.SkillBox1 {
-    width: 30%;
-    height: 200px;
-    border-radius: 40px;
-    background-image: linear-gradient(135deg, rgba(58, 150, 121, 1), rgba(58, 150, 121, 0.5));
-    box-shadow: 0 4px 8px 0 rgba(12, 0, 51, 0.1);
-    color: #ECF5FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-family: 'Gugi', cursive;
-    opacity: 0.8;
-    padding: 10px;
-    letter-spacing: 2px;
-    box-sizing: border-box;
-}
-
-.SkillArrowLeft1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 20px 50px;
-    width: 50%;
-    height: 150px;
-    background: #d1ebe3;
-    transform: translateX(-4px);
-    z-index: -1;
-    color: rgba(69, 69, 69, 0.8);
-    font-size: 14px;
-    white-space: nowrap;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-
-}
-
-.SkillArrowRight1 {
-    border-top: 100px solid #FAFAFA;
-    border-bottom: 100px solid #FAFAFA;
-    border-left: 90px solid #d1ebe3;
-    display: inline-block;
-    transform: translateX(-4px);
-    z-index: -2;
-}
-
-.SkillBox2 {
-    width: 30%;
-    height: 200px;
-    border-radius: 40px;
-    background-image: linear-gradient(135deg, rgba(250, 188, 96, 1), rgba(250, 188, 96, 0.5));
-    box-shadow: 0 4px 8px 0 rgba(12, 0, 51, 0.1);
-    color: #ECF5FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-family: 'Gugi', cursive;
-    opacity: 0.8;
-    padding: 10px;
-    letter-spacing: 2px;
-    box-sizing: border-box;
-}
-
-.SkillArrowLeft2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 20px 50px;
-    width: 50%;
-    height: 150px;
-    background: #f4ece1;
-    transform: translateX(-4px);
-    z-index: -1;
-    color: rgba(69, 69, 69, 0.8);
-    font-size: 14px;
-    white-space: nowrap;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-}
-
-.SkillArrowRight2 {
-    border-top: 100px solid #FAFAFA;
-    border-bottom: 100px solid #FAFAFA;
-    border-left: 90px solid #f4ece1;
-    display: inline-block;
-    transform: translateX(-4px);
-    z-index: -2;
-}
-
-.SkillBox3 {
-    width: 30%;
-    height: 200px;
-    border-radius: 40px;
-    background-image: linear-gradient(135deg, rgba(225, 98, 98, 1), rgba(225, 98, 98, 0.5));
-    box-shadow: 0 4px 8px 0 rgba(12, 0, 51, 0.1);
-    color: #ECF5FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-family: 'Gugi', cursive;
-    opacity: 0.8;
-    padding: 10px;
-    letter-spacing: 2px;
-    box-sizing: border-box;
-}
-
-.SkillArrowLeft3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 20px 50px;
-    width: 50%;
-    height: 150px;
-    background: #f3dddd;
-    transform: translateX(-4px);
-    z-index: -1;
-    color: rgba(69, 69, 69, 0.8);
-    font-size: 14px;
-    white-space: nowrap;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-}
-
-.SkillArrowRight3 {
-    border-top: 100px solid #FAFAFA;
-    border-bottom: 100px solid #FAFAFA;
-    border-left: 90px solid #f3dddd;
-    display: inline-block;
-    transform: translateX(-4px);
-    z-index: -2;
-}
-
 .gitBook {
     display: flex;
     width: 100vw;
@@ -1216,6 +1133,9 @@ body {
 }
 
 @media only screen and (max-width:768px) {
+    .skillChartBox {
+        width: 50%;
+    }
     .gitBook {
         padding: 60px 0;
         margin-top: 60px;
@@ -1229,54 +1149,6 @@ body {
         font-weight: 600;
         margin: 0 10px;
         font-size: 18px;
-    }
-
-    .SkillBox1,
-    .SkillBox2,
-    .SkillBox3 {
-        font-size: 18px;
-        width: 15%;
-        writing-mode: vertical-rl;
-    }
-
-    .SkillArrowLeft1,
-    .SkillArrowLeft2,
-    .SkillArrowLeft3 {
-        font-size: 12px;
-        padding: 10px 15px;
-        width: calc(90% - 40px);
-        justify-content: center;
-    }
-
-    .SkillArrowRight1 {
-        border-top: 90px solid #FAFAFA;
-        border-bottom: 90px solid #FAFAFA;
-        border-left: 40px solid #d1ebe3;
-    }
-
-    .SkillArrowRight2 {
-        border-top: 90px solid #FAFAFA;
-        border-bottom: 90px solid #FAFAFA;
-        border-left: 40px solid #f4ece1;
-    }
-
-    .SkillArrowRight3 {
-        border-top: 90px solid #FAFAFA;
-        border-bottom: 90px solid #FAFAFA;
-        border-left: 40px solid #f3dddd;
-    }
-
-    .ArrowBox1 {
-        padding: 10px 0;
-    }
-
-    .ArrowBox2 {
-        padding: 10px 0;
-        transform: translateX(0px);
-    }
-
-    .ArrowBox3 {
-        padding: 10px 0;
     }
 
     .Introduction,
