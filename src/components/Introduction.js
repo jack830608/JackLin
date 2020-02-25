@@ -3,43 +3,28 @@ import React from 'react';
 export default (props) => {
 
   return (
-    <div
-      className="container"
-      id="container"
-      style={{ transform: 'skewY(-5deg)', background: '#29323f', backgroundImage: 'url(/images/new_head.png)', backgroundRepeat: 'no-repeat' }}
-    >
-      <div style={{ transform: 'skewY(5deg)' }}>
-        <div className="box">
-          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-              <h1 className="h1name" style={{ fontWeight: 500 }}>
-                林偉捷（Jack Lin）
-                  </h1>
-              {/* <div
-                style={{ marginRight: '10px', cursor: 'pointer' }}
-                onClick={() => window.open('https://www.facebook.com/WEIJIE.LIN7777', '_blank')}
-              >
-                <img src="/images/facebook.png" width="20px" />
-              </div> */}
-              <div style={{ marginRight: '10px', cursor: 'pointer' }}
-                onClick={() => window.open('https://www.linkedin.com/in/jack1in', '_blank')}>
-                <img src="/images/linkedin.png" width="20px" />
-              </div>
-              <div style={{ cursor: 'pointer' }}
-                onClick={() => window.open('https://line.me/ti/p/0f4vdsbN3Z', '_blank')}>
-                <img src="/images/line.png" width="20px" />
-              </div>
-            </div>
-            <div className="logoData">
-              I have three years of experience in developing back-end and front-end and passionate about pursuing new knowledge, new skills, enjoying the sense of accomplishment of software development. For me , coding is to make life more convenient & solve problems in life, so I am happy to challenge new things and learn many new skills.
-            </div>
-            <br />
-            <li className="list">Web Developer</li>
-            <li className="list">Taipei，Taiwan</li>
-            <li className="list">jack830608@gmail.com</li>
-            <li className="list">0983603435</li>
+    <div id="Introduction">
+      <div className={'introductionTitle'}>
+        <h1>
+          About Me
+        </h1>
+      </div>
+      <div className={'introductionBox'}>
+        <div className={'introductionLeft'}>
+          <p>My name is Jack Lin, have three years of experience in developing back-end and front-end.</p>
+          <p>I am passionate about pursuing new knowledge, new skills and enjoying the sense of accomplishment of software development.</p>
+          <p>For me , coding is to make life more convenient & solve problems in life, so I am happy to challenge new things and learn many new skills.</p>
+          <div
+            className="introductionButton"
+            onClick={() => window.open('mailto:jack830608@gmail.com','_blank')}
+          >
+            Contact Me
           </div>
-          <div className="headPic" />
+        </div>
+        <div className={'introductionRight'}>
+          <h1>
+            {'</>'}
+          </h1>
         </div>
       </div>
     </div>

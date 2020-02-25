@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Menu from '../components/Menu';
-import All from '../components/All';
+import Banner from '../components/Banner';
 import Animation from '../components/Loading/animation';
+import Introduction from '../components/Introduction';
+import Experience from '../components/Experience';
 
 export default (props) => {
   const [show, setShow] = useState(false)
@@ -19,7 +21,7 @@ export default (props) => {
     }
 
     let image = document.createElement('img');
-    image.src = getBgUrl(document.querySelector('.allFilter'));
+    image.src = getBgUrl(document.querySelector('.filter'));
     image.onload = function () {
       setTimeout(() => document.getElementById('loading').style.opacity = 0, 1500)
       setTimeout(() => {
@@ -30,9 +32,11 @@ export default (props) => {
   })
   return (
     <div>
-      <Menu page='Skills' />
-      <All show={show}/>
       <Animation />
+      <Menu/>
+      <Banner show={show}/>
+      <Introduction/>
+      <Experience/>
     </div>
   );
 }

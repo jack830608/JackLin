@@ -3,8 +3,13 @@ import React from 'react';
 export default (props) => {
 
   return (
-    <div className="container" id="container">
-      <div>
+    <div id="Experience">
+      <div className={'experienceTitle'}>
+        <h1>
+          Experience
+        </h1>
+      </div>
+      <div className="experienceBox">
         <section id="cd-timeline" className="cd-container">
           <div className="cd-timeline-block">
             <div className="cd-timeline-img cd-movie">
@@ -22,12 +27,12 @@ export default (props) => {
                   </a>
               </h2>
               <div className="timeline-content-info">
-                <span className="timeline-content-info-title" style={{marginRight: "10px"}}>
-                  Back-end 
+                <span className="timeline-content-info-title" style={{ marginRight: "10px" }}>
+                  Back-end
                   </span>
                 <span className="timeline-content-info-date">
                   <i className="fa fa-calendar-o" aria-hidden="true">
-                  2017-09 ~ 2018-06
+                    2017-09 ~ 2018-06
                   </i>
                 </span>
               </div>
@@ -50,12 +55,12 @@ export default (props) => {
             <div className="cd-timeline-content">
               <h2>MemePR - 潮語傳媒股份有限公司</h2>
               <div className="timeline-content-info">
-                <span className="timeline-content-info-title" style={{marginRight: "10px"}}>
+                <span className="timeline-content-info-title" style={{ marginRight: "10px" }}>
                   Front-end
                 </span>
                 <span className="timeline-content-info-date">
                   <i className="fa fa-calendar-o" aria-hidden="true">
-                  2018-06 ~ 2019-08
+                    2018-06 ~ 2019-08
                   </i>
                 </span>
               </div>
@@ -86,14 +91,14 @@ export default (props) => {
             <div className="cd-timeline-content">
               <h2>Tripmoment - 時刻旅行</h2>
               <div className="timeline-content-info">
-                <span className="timeline-content-info-title" style={{marginRight: "10px"}}>
+                <span className="timeline-content-info-title" style={{ marginRight: "10px" }}>
                   Front-end
                 </span>
                 <span className="timeline-content-info-date">
                   <i className="fa fa-calendar-o" aria-hidden="true">
-                  2019-08 ~  2019-11
+                    2019-08 ~  2019-11
                   </i>
-                  </span>
+                </span>
               </div>
               <p>
                 During the time at the Tripmoment, I have been responsible for more thing ,including Front-end and Back-end. It also let me to learn more technology and continue to help company develop new products.
@@ -117,14 +122,14 @@ export default (props) => {
             <div className="cd-timeline-content">
               <h2>Vpon - 威朋大數據集團</h2>
               <div className="timeline-content-info">
-                <span className="timeline-content-info-title" style={{marginRight: "10px"}}>
+                <span className="timeline-content-info-title" style={{ marginRight: "10px" }}>
                   Software Engineer
                 </span>
                 <span className="timeline-content-info-date">
                   <i className="fa fa-calendar-o" aria-hidden="true">
-                  2019-11 ~  Now
+                    2019-11 ~  Now
                   </i>
-                  </span>
+                </span>
               </div>
               <p>
                 Vpon is an advertising company combining big data ,for me it's completely different from my previous job. There are more then 70 engineers in Vpon so we can exchange skills with each other and exposed to many new skills not limited to the front-end.
