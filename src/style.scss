@@ -116,6 +116,8 @@ p {
 .Introduction{
     width: 100%;
     background: #0F0F0F;
+    display: flex;
+    justify-content: center;
 }
 #Introduction {
     width: 100%;
@@ -124,6 +126,7 @@ p {
     position: relative;
     opacity: 0;
     transition: 1s linear;
+    max-width:1500px;
 }
 
 #Introduction::before {
@@ -217,6 +220,8 @@ p {
 .Experience{
     width: 100%;
     background: #0F0F0F;
+    display: flex;
+    justify-content: center;
 }
 #Experience {
     width: 100%;
@@ -225,6 +230,7 @@ p {
     position: relative;
     opacity: 0;
     transition: 1s linear;
+    max-width: 1500px;
 }
 
 #Experience::before {
@@ -267,6 +273,8 @@ p {
 .Skills{
     width: 100%;
     background: #0F0F0F;
+    display: flex;
+    justify-content: center;
 }
 #Skills {
     width: 100%;
@@ -275,6 +283,7 @@ p {
     position: relative;
     opacity: 0;
     transition: 1s linear;
+    max-width: 1500px;
 }
 
 #Skills::before {

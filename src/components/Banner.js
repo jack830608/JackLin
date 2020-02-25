@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 export default (props) => {
   const findDistance = (section) => {
     if (section && document.getElementById(section)) {
-      window.scrollTo({ 'behavior': 'smooth', 'top': document.getElementById(section).offsetTop })
+      window.scrollTo({ 'behavior': 'smooth', 'top': document.getElementById(section).offsetTop - 60})
     }
   }
   const [word, setWord] = useState('')
