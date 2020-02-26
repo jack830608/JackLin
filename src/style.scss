@@ -219,9 +219,11 @@ a {
     }
 }
 
-.introductionButton {
+.introductionButton,
+.introductionButton1 {
     background: #ECF5FF;
     color: #151515;
+    border:1px solid #ECF5FF;
     padding: 10px 20px;
     width: fit-content;
     font-weight: 500;
@@ -236,6 +238,40 @@ a {
         transform: translateY(-4px);
     }
 }
+.introductionButton1 {
+    background: #151515;
+    color: #ECF5FF;
+}
+.buttonBox{
+    display: flex;
+    align-items: center;
+}
+.location{
+    opacity: 0.8;
+    margin:40px 30px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    img{
+        width: 30px;
+        margin:0 10px;
+    }
+    div{
+        background: url('/images/Introduction.jpg') no-repeat;
+        background-position: center;
+        background-size: 100%;
+        background-attachment: fixed;
+        font-weight: 700;
+        z-index: 1;
+        cursor: default;
+        color: transparent !important;
+        -webkit-background-clip: text;
+        font-family: Kanit;
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+}
+
 
 // Introduction End
 // Experience Start
@@ -1034,16 +1070,31 @@ a {
     .introductionLeft p {
         margin: 8px 0;
     }
-
-    .introductionButton {
-        margin: 50px 0 0 0;
-        padding: 8px 15px;
+    .location{
+        margin:30px 0 0 5px;
+        justify-content: flex-start;
+        img{
+            width: 20px;
+            margin:0 8px;
+        }
+        div{
+            font-size: 16px;
+        }
     }
-
+    .introductionButton,
+    .introductionButton1{
+        margin: 8px 0;
+        padding: 10px 15px;
+    }
+    .buttonBox{
+        flex-direction: column;
+        align-items: flex-start;
+        margin:40px 0 0 10px;
+    }
     .introductionRight h1 {
         font-size: 4em;
         right: 0;
-        bottom: -20px;
+        bottom: 20px;
     }
 
     .experienceBox {
