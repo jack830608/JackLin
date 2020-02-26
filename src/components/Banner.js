@@ -34,19 +34,19 @@ export default (props) => {
             <span class="wordLine" style={{ animation: animation }}>｜</span>
             <div class="iconBox" style={{ opacity: icon }}>
               <a href="https://www.facebook.com/WEIJIE.LIN7777" target="_blank">
-                <img src="/images/all_facebook.svg"/>
+                <img src="/images/facebook.svg"/>
               </a>
               <a href="https://www.linkedin.com/in/jack1in/" target="_blank">
-                <img src="/images/all_linkedin.svg"/>
+                <img src="/images/linkedin.svg"/>
               </a>
               <a href="https://github.com/jack830608" target="_blank">
-                <img src="/images/all_github.svg"/>
+                <img src="/images/github.svg"/>
               </a>
               <a href="https://line.me/ti/p/0f4vdsbN3Z" target="_blank">
-                <img src="/images/all_line.svg"/>
+                <img src="/images/line.svg"/>
               </a>
               <a href="mailto:jack830608@gmail.com" target="_blank">
-                <img src="/images/all_google.svg"/>
+                <img src="/images/google.svg"/>
               </a>
             </div>
           </div>
