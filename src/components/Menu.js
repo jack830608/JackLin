@@ -57,7 +57,7 @@ export default (props) => {
       <div className="mobileMenu">
         <div
           className="Mmenu"
-          style={{ background: props.page === 'Introduction' ? 'rgba(0,0,0,0.1)' : '' }}
+          id="IntroductionMmenu"
           onClick={
             () => {
               findDistance('Introduction');
@@ -68,7 +68,7 @@ export default (props) => {
           </div>
         <div
           className="Mmenu"
-          style={{ background: props.page === 'Experience' ? 'rgba(0,0,0,0.1)' : '' }}
+          id="ExperienceMmenu"
           onClick={
             () => {
               findDistance('Experience');
@@ -79,7 +79,7 @@ export default (props) => {
           </div>
         <div
           className="Mmenu"
-          style={{ background: props.page === 'Skills' ? 'rgba(0,0,0,0.1)' : '' }}
+          id="SkillsMmenu"
           onClick={
             () => {
               findDistance('Skills');
@@ -90,7 +90,7 @@ export default (props) => {
           </div>
         <div
           className="Mmenu"
-          style={{ background: props.page === 'Project' ? 'rgba(0,0,0,0.1)' : '' }}
+          id="ProjectMmenu"
           onClick={
             () => {
               findDistance('Project');
