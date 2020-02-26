@@ -204,12 +204,12 @@ p {
     padding: 10px 20px;
     width: fit-content;
     font-weight: 500;
-    margin: 100px 0 0 20px;
+    margin: 100px 0 3em 20px;
     font-family: Kanit;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.2s linear;
-
+    opacity: 0.9;
     &:hover {
         transform: translateY(-4px);
     }
@@ -319,23 +319,15 @@ p {
 
 .skillsBox {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     margin-top: 250px;
-    flex-wrap: wrap;
+    padding:0 10%;
 }
-
-.skillChartBox {
-    width: 23%;
-    color: #ECF5FF;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Kanit;
+.skillbar{
+    background: transparent;
 }
-
+.skillbar-percent{
+    color:#ECF5FF;
+}
 // Skills End
 
 .Project,
@@ -1152,9 +1144,6 @@ body {
 }
 
 @media only screen and (max-width:768px) {
-    .skillChartBox {
-        width: 50%;
-    }
     .gitBook {
         padding: 60px 0;
         margin-top: 60px;

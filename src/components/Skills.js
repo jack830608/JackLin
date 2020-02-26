@@ -1,129 +1,41 @@
 import React from 'react';
-import GaugeChart from 'react-gauge-chart';
+import SkillBar from 'react-skillbars';
 
 export default (props) => {
 
+  const skills = [
+    { type: "HTML", level: 90 },
+    { type: "CSS", level: 85 },
+    { type: "SASS", level: 70 },
+    { type: "Javascript", level: 85 },
+    { type: "React", level: 85 },
+    { type: "Jquery", level: 75 },
+    { type: "Node.js", level: 75 },
+    { type: "MongoDB", level: 60 },
+    { type: "MySQL", level: 60 },
+    { type: "Docker", level: 70 },
+    { type: "ShellScript", level: 70 },
+  ];
+  const colors = {
+    "bar": "rgb(135,153,220)",
+    "title": {
+      "text": "#ECF5FF",
+      "background": "rgb(75,105,205)",
+    }
+  }
+
   return (
     <div className="Skills">
-    <div id="Skills">
-      <div className='skillsTitle'>
-        <h1>
-          Skills
+      <div id="Skills">
+        <div className='skillsTitle'>
+          <h1>
+            Skills
         </h1>
-      </div>
-      <div className="skillsBox">
-        <div className="skillChartBox">
-          <GaugeChart id="gauge-chart1"
-            nrOfLevels={30}
-            colors={["#FF5F6D", "#FFC371"]}
-            textColor="#ECF5FF"
-            arcWidth={0.3}
-            percent={0.85}
-          />
-          <div>HTML</div>
         </div>
-        <div className="skillChartBox">
-          <GaugeChart id="gauge-chart2"
-            nrOfLevels={30}
-            colors={["#FF5F6D", "#FFC371"]}
-            textColor="#ECF5FF"
-            arcWidth={0.3}
-            percent={0.85}
-          />
-          <div>CSS、SASS、SCSS</div>
-        </div>
-        <div className="skillChartBox">
-          <GaugeChart id="gauge-chart3"
-            nrOfLevels={30}
-            colors={["#FF5F6D", "#FFC371"]}
-            textColor="#ECF5FF"
-            arcWidth={0.3}
-            percent={0.85}
-          />
-          <div>Javascript</div>
-        </div>
-        <div className="skillChartBox">
-          <GaugeChart id="gauge-chart4"
-            nrOfLevels={30}
-            colors={["#FF5F6D", "#FFC371"]}
-            textColor="#ECF5FF"
-            arcWidth={0.3}
-            percent={0.85}
-          />
-          <div>React、Redux、Next.js</div>
-        </div>
-        <div className="skillChartBox">
-          <GaugeChart id="gauge-chart5"
-            nrOfLevels={30}
-            colors={["#FF5F6D", "#FFC371"]}
-            textColor="#ECF5FF"
-            arcWidth={0.3}
-            percent={0.75}
-          />
-          <div>Jquery</div>
-        </div>
-        <div className="skillChartBox">
-          <GaugeChart id="gauge-chart6"
-            nrOfLevels={30}
-            colors={["#FF5F6D", "#FFC371"]}
-            textColor="#ECF5FF"
-            arcWidth={0.3}
-            percent={0.75}
-          />
-          <div>Node.js (Express)</div>
-        </div>
-        <div className="skillChartBox">
-          <GaugeChart id="gauge-chart7"
-            nrOfLevels={30}
-            colors={["#FF5F6D", "#FFC371"]}
-            textColor="#ECF5FF"
-            arcWidth={0.3}
-            percent={0.6}
-          />
-          <div>MongoDB、Mongoose</div>
-        </div>
-        <div className="skillChartBox">
-          <GaugeChart id="gauge-chart8"
-            nrOfLevels={30}
-            colors={["#FF5F6D", "#FFC371"]}
-            textColor="#ECF5FF"
-            arcWidth={0.3}
-            percent={0.6}
-          />
-          <div>MySQL</div>
-        </div>
-        <div className="skillChartBox">
-          <GaugeChart id="gauge-chart9"
-            nrOfLevels={30}
-            colors={["#FF5F6D", "#FFC371"]}
-            textColor="#ECF5FF"
-            arcWidth={0.3}
-            percent={0.7}
-          />
-          <div>Docker</div>
-        </div>
-        <div className="skillChartBox">
-          <GaugeChart id="gauge-chart10"
-            nrOfLevels={30}
-            colors={["#FF5F6D", "#FFC371"]}
-            textColor="#ECF5FF"
-            arcWidth={0.3}
-            percent={0.65}
-          />
-          <div>AWS、GCP、DigitalOcean</div>
-        </div>
-        <div className="skillChartBox">
-          <GaugeChart id="gauge-chart11"
-            nrOfLevels={30}
-            colors={["#FF5F6D", "#FFC371"]}
-            textColor="#ECF5FF"
-            arcWidth={0.3}
-            percent={0.7}
-          />
-          <div>Shell Script</div>
+        <div className="skillsBox">
+          <SkillBar skills={skills} colors={colors}/>
         </div>
       </div>
-    </div>
     </div>
   );
 }
