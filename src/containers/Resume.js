@@ -5,6 +5,7 @@ import Animation from '../components/Loading/animation';
 import Introduction from '../components/Introduction';
 import Experience from '../components/Experience';
 import Skills from '../components/Skills';
+import Project from '../components/Project';
 
 export default (props) => {
   const [show, setShow] = useState(false)
@@ -47,38 +48,60 @@ export default (props) => {
         const SkillsMenu = document.getElementById('SkillsMenu')
         const SkillsTop = Skills.getBoundingClientRect().top;
         const SkillsBottom = Skills.getBoundingClientRect().bottom;
+        const Project = document.getElementById('Project')
+        const ProjectMenu = document.getElementById('ProjectMenu')
+        const ProjectTop = Project.getBoundingClientRect().top;
+        const ProjectBottom = Project.getBoundingClientRect().bottom;
         const windowsHeight = window.innerHeight - 500;
         if (BannerTop < windowsHeight && BannerBottom >= 0) {
           Introduction.style.opacity = 0
           Experience.style.opacity = 0
           Skills.style.opacity = 0
-          IntroductionMenu.className="menu"
-          ExperienceMenu.className="menu"
-          SkillsMenu.className="menu"
+          Project.style.opacity = 0
+          IntroductionMenu.className = "menu"
+          ExperienceMenu.className = "menu"
+          SkillsMenu.className = "menu"
+          ProjectMenu.className = "menu"
         }
         if (IntroductionTop < windowsHeight && IntroductionBottom >= 0) {
           Introduction.style.opacity = 1
           Experience.style.opacity = 0
           Skills.style.opacity = 0
-          IntroductionMenu.className="menuR"
-          ExperienceMenu.className="menu"
-          SkillsMenu.className="menu"
+          Project.style.opacity = 0
+          IntroductionMenu.className = "menuR"
+          ExperienceMenu.className = "menu"
+          SkillsMenu.className = "menu"
+          ProjectMenu.className = "menu"
         }
-        if (ExperienceTop < windowsHeight && ExperienceBottom >= 0 ) {
+        if (ExperienceTop < windowsHeight && ExperienceBottom >= 0) {
           Introduction.style.opacity = 0
           Experience.style.opacity = 1
           Skills.style.opacity = 0
-          IntroductionMenu.className="menu"
-          ExperienceMenu.className="menuR"
-          SkillsMenu.className="menu"
+          Project.style.opacity = 0
+          IntroductionMenu.className = "menu"
+          ExperienceMenu.className = "menuR"
+          SkillsMenu.className = "menu"
+          ProjectMenu.className = "menu"
         }
-        if (SkillsTop < windowsHeight && SkillsBottom >= 0 ) {
+        if (SkillsTop < windowsHeight && SkillsBottom >= 0) {
           Introduction.style.opacity = 0
           Experience.style.opacity = 0
           Skills.style.opacity = 1
-          IntroductionMenu.className="menu"
-          ExperienceMenu.className="menu"
-          SkillsMenu.className="menuR"
+          Project.style.opacity = 0
+          IntroductionMenu.className = "menu"
+          ExperienceMenu.className = "menu"
+          SkillsMenu.className = "menuR"
+          ProjectMenu.className = "menu"
+        }
+        if (ProjectTop < windowsHeight && ProjectBottom >= 0) {
+          Introduction.style.opacity = 0
+          Experience.style.opacity = 0
+          Skills.style.opacity = 0
+          Project.style.opacity = 1
+          IntroductionMenu.className = "menu"
+          ExperienceMenu.className = "menu"
+          SkillsMenu.className = "menu"
+          ProjectMenu.className = "menuR"
         }
       }
     )
@@ -91,6 +114,7 @@ export default (props) => {
       <Introduction />
       <Experience />
       <Skills />
+      <Project />
     </div>
   );
 }

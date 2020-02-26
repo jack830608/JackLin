@@ -50,7 +50,7 @@ export default (props) => {
                   </span>
                 </div>
                 <p>
-                  During the time at the Tripmoment, I have been responsible for more thing ,including Front-end and Back-end. It also let me to learn more technology and continue to help company develop new products.
+                  During the time at the Tripmoment, I have been responsible for more thing ,including Front-end and Back-end. It also let me to learn more skill and continue to help company develop new products.
                   </p>
               </div>
             </div>

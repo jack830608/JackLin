@@ -6,9 +6,9 @@ export default (props) => {
   const skills = [
     { type: "HTML", level: 90 },
     { type: "CSS", level: 85 },
-    { type: "SASS", level: 70 },
+    { type: "SASS/SCSS", level: 70 },
     { type: "Javascript", level: 85 },
-    { type: "React", level: 85 },
+    { type: "React/Redux", level: 85 },
     { type: "Jquery", level: 75 },
     { type: "Node.js", level: 75 },
     { type: "MongoDB", level: 60 },
@@ -17,10 +17,10 @@ export default (props) => {
     { type: "ShellScript", level: 70 },
   ];
   const colors = {
-    "bar": "rgb(135,153,220)",
+    "bar": "linear-gradient(45deg,rgba(75,105,205,0.4) ,rgba(135,153,220,0.8))",
     "title": {
       "text": "#ECF5FF",
-      "background": "rgb(75,105,205)",
+      "background": "linear-gradient(45deg,rgba(75,105,205,0.2) ,rgba(75,105,205,0.8))",
     }
   }
 
@@ -33,7 +33,12 @@ export default (props) => {
         </h1>
         </div>
         <div className="skillsBox">
-          <SkillBar skills={skills} colors={colors}/>
+          <SkillBar
+            skills={skills}
+            colors={colors}
+            animationDelay={0}
+            animationDuration={2000}
+          />
         </div>
       </div>
     </div>
