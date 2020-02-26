@@ -583,11 +583,6 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
-    .cd-timeline-content h2 {
-        font-size: 18px;
-        font-weight: 400;
-    }
-
     .cd-timeline-content p {
         font-size: 14px;
         font-weight: 300;
@@ -774,7 +769,9 @@ a {
 .link {
     text-decoration: underline;
     color: #ECF5FF;
-    font-style: italic;
+    font-weight: 300;
+    font-family: "Relative", mono, sans-serif;
+    font-size: 14px;
 }
 
 .desktopMenu {
@@ -1067,7 +1064,8 @@ a {
 
     .skillbar-title span {
         font-size: 12px !important;
-        padding: 0 10px !important;
+        padding: 0 5px !important;
+        text-align: center;
     }
 
     .skillbar-percent {

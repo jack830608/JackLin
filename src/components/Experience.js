@@ -90,7 +90,7 @@ export default (props) => {
                 <a
                     href="https://www.injiaoyun.com/jack.html"
                     className="link"
-                    style={{ fontSize: '16px', marginLeft: '5px' }}
+                    style={{marginLeft: '5px' }}
                     target="blank"
                   >
                     Recommendation Letter
