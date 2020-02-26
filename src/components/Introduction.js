@@ -17,7 +17,7 @@ export default (props) => {
             <p>For me , coding is to make life more convenient & solve problems in life, so I am happy to challenge new things and learn many new skills.</p>
             <div className="location">
               <img src="/images/pin.svg" />
-              <div>Taipei , Taiwan</div>
+              <div>Taipei, Taiwan</div>
             </div>
             <div className="buttonBox">
             <div
