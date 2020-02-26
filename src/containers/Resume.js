@@ -135,10 +135,10 @@ export default (props) => {
       <Animation />
       <Menu />
       <Banner show={show} />
-      <Introduction />
-      <Experience />
-      <Skills />
-      <Project />
+      {show &&<Introduction />}
+      {show && <Experience />}
+      {show && <Skills />}
+      {show && <Project />}
     </div>
   );
 }
