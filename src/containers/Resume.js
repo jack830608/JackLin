@@ -107,7 +107,7 @@ export default (props) => {
     )
   }, [])
   return (
-    <div>
+    <div className="container">
       <Animation />
       <Menu />
       <Banner show={show} />

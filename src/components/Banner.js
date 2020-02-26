@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 
 export default (props) => {
-  const findDistance = (section) => {
-    if (section && document.getElementById(section)) {
-      window.scrollTo({ 'behavior': 'smooth', 'top': document.getElementById(section).offsetTop - 60})
-    }
-  }
+  const findDistance = useSelector((state) => state.findDistance);
   const [word, setWord] = useState('')
   const [icon, setIcon] = useState(0)
   const [animation, setAnimation] = useState('none')

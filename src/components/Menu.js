@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Link } from "react-router-dom";
 import $ from 'jquery';
 import { useSelector, useDispatch } from 'react-redux';
 
 export default (props) => {
-  const findDistance = (section) => {
-    if (section && document.getElementById(section)) {
-      window.scrollTo({ 'behavior': 'smooth', 'top': document.getElementById(section).offsetTop - 60 })
-    }
-  }
+  const findDistance = useSelector((state) => state.findDistance);
   const dispatch = useDispatch();
   const [menuShow, setMenuShow] = useState(false);
   const MenuAction = () => {
@@ -16,7 +11,7 @@ export default (props) => {
     $('.mobileMenu').slideToggle();
     setMenuShow(!menuShow);
     if (!menuShow) {
-      $('.frame').css('background-color', 'rgba(255,255,255,1)')
+      $('.frame').css('background-color', 'rgba(21, 21, 21, 0.96)')
       $('.frame').css('box-shadow', '0 4px 8px 0 rgba(12,0,51,0.1)')
     } else {
       $('.frame').css('background-color', 'rgba(0, 0, 0, 0)')
@@ -63,28 +58,44 @@ export default (props) => {
         <div
           className="Mmenu"
           style={{ background: props.page === 'Introduction' ? 'rgba(0,0,0,0.1)' : '' }}
-          onClick={() => findDistance('Introduction')}
+          onClick={
+            () => {
+              findDistance('Introduction');
+              MenuAction();
+            }}
         >
           Introduction
           </div>
         <div
           className="Mmenu"
           style={{ background: props.page === 'Experience' ? 'rgba(0,0,0,0.1)' : '' }}
-          onClick={() => findDistance('Experience')}
+          onClick={
+            () => {
+              findDistance('Experience');
+              MenuAction();
+            }}
         >
           Experience
           </div>
         <div
           className="Mmenu"
           style={{ background: props.page === 'Skills' ? 'rgba(0,0,0,0.1)' : '' }}
-          onClick={() => findDistance('Skills')}
+          onClick={
+            () => {
+              findDistance('Skills');
+              MenuAction();
+            }}
         >
           Skills
           </div>
         <div
           className="Mmenu"
           style={{ background: props.page === 'Project' ? 'rgba(0,0,0,0.1)' : '' }}
-          onClick={() => findDistance('Project')}
+          onClick={
+            () => {
+              findDistance('Project');
+              MenuAction();
+            }}
         >
           Project
           </div>

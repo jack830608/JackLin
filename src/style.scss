@@ -1,10 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Gugi|Raleway|Kanit');
 
+html,
+body,
 h1,
 p {
     margin: 0;
 }
 
+body {
+    background: #151515;
+    font-family: "Relative", mono, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+.container{
+    overflow: hidden;
+    padding-bottom:100px;
+}
 // Banner Start
 #Banner {
     background: linear-gradient(105deg, rgb(32, 25, 36) 75%, rgba(52, 48, 56, 0.6));
@@ -113,12 +127,13 @@ p {
 // Banner end
 
 // Introduction Start
-.Introduction{
+.Introduction {
     width: 100%;
-    background: #151515;
+    background: linear-gradient(180deg, rgb(19,15,21) 50%, #151515);
     display: flex;
     justify-content: center;
 }
+
 #Introduction {
     width: 100%;
     padding: 70px 10%;
@@ -126,7 +141,7 @@ p {
     position: relative;
     opacity: 0;
     transition: 1s linear;
-    max-width:1600px;
+    max-width: 1600px;
 }
 
 #Introduction::before {
@@ -210,6 +225,7 @@ p {
     cursor: pointer;
     transition: 0.2s linear;
     opacity: 0.9;
+
     &:hover {
         transform: translateY(-4px);
     }
@@ -217,12 +233,13 @@ p {
 
 // Introduction End
 // Experience Start
-.Experience{
+.Experience {
     width: 100%;
     background: #151515;
     display: flex;
     justify-content: center;
 }
+
 #Experience {
     width: 100%;
     padding: 70px 10%;
@@ -270,12 +287,13 @@ p {
 
 // Experience End
 // Skills Start
-.Skills{
+.Skills {
     width: 100%;
     background: #151515;
     display: flex;
     justify-content: center;
 }
+
 #Skills {
     width: 100%;
     padding: 70px 10%;
@@ -320,22 +338,26 @@ p {
 .skillsBox {
     position: relative;
     margin-top: 250px;
-    padding:0 10%;
+    padding: 0 10%;
 }
-.skillbar{
+
+.skillbar {
     background: transparent !important;
 }
-.skillbar-percent{
-    color:#ECF5FF !important;
+
+.skillbar-percent {
+    color: #ECF5FF !important;
 }
+
 // Skills End
 // Project Start
-.Project{
+.Project {
     width: 100%;
     background: #151515;
     display: flex;
     justify-content: center;
 }
+
 #Project {
     width: 100%;
     padding: 70px 10%;
@@ -380,19 +402,14 @@ p {
 .projectBox {
     position: relative;
     margin-top: 250px;
-    padding:0 10%;
+    padding: 0 10%;
 }
 
-.slick-dots li button:before{
-    color:#ECF5FF !important;
+.slick-dots li button:before {
+    color: #ECF5FF !important;
 }
+
 // Project End
-
-.list {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 12px;
-    margin: 5px 10px;
-}
 
 .cd-container {
     max-width: 1080px;
@@ -409,7 +426,7 @@ p {
 
 #cd-timeline {
     position: relative;
-    padding: 3em 0;
+    padding: 1em 0;
 }
 
 #cd-timeline::before {
@@ -423,10 +440,6 @@ p {
 }
 
 @media only screen and (min-width: 1170px) {
-    #cd-timeline {
-        margin-top: 3em;
-        margin-bottom: 3em;
-    }
 
     #cd-timeline::before {
         left: 50%;
@@ -576,6 +589,10 @@ p {
         font-size: 14px;
         font-size: 0.875rem;
     }
+
+    .mobileMenu {
+        display: none !important;
+    }
 }
 
 @media only screen and (min-width: 1170px) {
@@ -670,6 +687,7 @@ p {
     border-radius: 5px;
     text-decoration: none;
     position: relative;
+
     &:after {
         background: none repeat scroll 0 0 transparent;
         bottom: 0;
@@ -682,11 +700,13 @@ p {
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
     }
+
     &:hover:after {
         width: 100%;
         left: 0;
     }
 }
+
 .menuR {
     margin: 0 18px;
     padding: 10px 2px;
@@ -699,6 +719,7 @@ p {
     transition: all 150ms ease;
     border-radius: 5px;
     position: relative;
+
     &:after {
         background: none repeat scroll 0 0 transparent;
         bottom: 0;
@@ -713,12 +734,13 @@ p {
         left: 0;
     }
 }
+
 .Mmenu {
     text-align: center;
     padding: 10px 0;
     cursor: pointer;
     letter-spacing: 2px;
-    color: #878787;
+    color: #ECF5FF;
     font-size: 14px;
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
@@ -738,182 +760,11 @@ p {
     transform: translate(0, -2px);
 }
 
-a {
-    text-decoration: none;
-}
-
-body {
-    background: #FAFAFA;
-    margin: 0;
-    font-family: "Relative", mono, sans-serif;
-}
-
-@keyframes Down {
-    from {
-        transform: translateY(3px);
-        opacity: 1;
-    }
-
-    to {
-        transform: translateY(35px);
-        opacity: 0;
-    }
-}
-
-.MouseDown {
-    border-radius: 2px;
-    background-clip: padding-box;
-    width: 4px;
-    height: 11px;
-    background-size: cover;
-    margin: 0 10px;
-    transition: 1s;
-    transform: translateY(3px);
-    animation: Down infinite 1.2s;
-}
-
-.container {
-    padding: 0 15% 5% 15%;
-    margin-top: 5%;
-    background-size: 400px !important;
-    background-position-y: 50% !important;
-    background-position-x: 102% !important;
-    transform: translateX(-400px);
-    transition: 500ms linear;
-    opacity: 0;
-}
-
-.box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 130px 0 80px 0;
-}
-
-.BoxData {
-    width: calc(30vw - 30px);
-    background: #ECF5FF;
-    box-shadow: 0 4px 8px 0 rgba(12, 0, 51, 0.1);
-    border-radius: 0 0 5px 5px;
-    padding: 5px 15px;
-}
-
-.logoData {
-    margin-top: 15px;
-    max-width: 55vw;
-    font-size: 14px;
-    color: #ECF5FF;
-    letter-spacing: 2px;
-    line-height: 22px;
-}
 
 .link {
     text-decoration: underline;
     color: #ECF5FF;
     font-style: italic;
-}
-
-.hidecircle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 275px;
-    height: 275px;
-    cursor: pointer;
-    opacity: 0.8;
-    position: absolute;
-    font-size: 16px;
-    color: #ECF5FF;
-    letter-spacing: 0.3rem;
-    transition: 100ms linear all;
-    visibility: hidden;
-    animation: spin- infinite 150s linear;
-}
-
-.circle1,
-.circle2,
-.circle3,
-.circle4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 275px;
-    height: 275px;
-    margin: -1.5px;
-    cursor: pointer;
-    -webkit-transition: transform 300ms ease-in-out, opacity 300ms ease;
-    transition: transform 300ms ease-in-out, opacity 300ms ease;
-    font-size: 20px;
-    font-family: 'Gugi', cursive;
-    box-sizing: border-box;
-}
-
-.circle1 {
-    background-image: url('/images/earth_1.png');
-    background-size: 350%;
-    background-position-x: -210px;
-    background-position-y: 6px;
-}
-
-.circle2 {
-    background-image: url('/images/earth_2.png');
-    background-size: 350%;
-    background-position-x: -410px;
-    background-position-y: -150px;
-}
-
-.circle3 {
-    background-image: url('/images/earth_3.png');
-    background-size: 350%;
-    background-position-x: -318px;
-    background-position-y: -192px;
-}
-
-.circle4 {
-    background-image: url('/images/earth_4.png');
-    background-size: 350%;
-    background-position-x: -487px;
-    background-position-y: -193px;
-}
-
-.circle1:hover {
-    transform: scale(1.1) translate(-13px, -13px);
-    box-shadow: 3px 3px 2px 1px rgba(161, 161, 161, 0.2);
-}
-
-.circle2:hover {
-    transform: scale(1.1) translate(13px, -13px);
-    box-shadow: -3px 3px 2px 1px rgba(161, 161, 161, 0.2);
-}
-
-.circle3:hover {
-    transform: scale(1.1) translate(-13px, 13px);
-    box-shadow: 3px -3px 2px 1px rgba(161, 161, 161, 0.2);
-}
-
-.circle4:hover {
-    transform: scale(1.1) translate(13px, 13px);
-    box-shadow: -3px -3px 2px 1px rgba(161, 161, 161, 0.2);
-}
-
-.homeImg {
-    width: 110px;
-}
-
-#homeBox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    background-image: url('/images/galaxy.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    margin: 0;
-    animation: resize infinite 200s linear;
 }
 
 .desktopMenu {
@@ -930,21 +781,6 @@ body {
     display: none;
 }
 
-.foot {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 10px 0;
-    border-top: 1px solid #BABABA;
-    background: #ECF5FF;
-    margin-top: 100px;
-    opacity: 0.5;
-}
-
-.foot img {
-    width: 200px;
-}
 
 .WebBrowser {
     width: 100%;
@@ -958,7 +794,7 @@ body {
     align-items: center;
     padding: 15px 30px 10px 20px;
     justify-content: space-between;
-    background: rgb(72,72,72);
+    background: rgb(72, 72, 72);
     border-radius: 10px 10px 0 0;
 }
 
@@ -971,22 +807,22 @@ body {
 .Dot {
     width: 10px;
     height: 10px;
-    background: rgb(90,89,90);
+    background: rgb(90, 89, 90);
     border-radius: 50px;
     margin: 4px;
 }
 
 .Url {
     width: 68%;
-    background: rgb(32,33,36);
+    background: rgb(32, 33, 36);
     font-size: 10px;
     padding: 1px 12px;
     border-radius: 3px;
-    color:#ECF5FF;
+    color: #ECF5FF;
 }
 
 .Web {
-    border: 2px solid rgb(72,72,72);
+    border: 2px solid rgb(72, 72, 72);
     display: flex;
     align-items: center;
     border-radius: 0 0 5px 5px;
@@ -1001,53 +837,15 @@ body {
 .webData {
     font-weight: 300;
     font-size: 14px;
-    padding:30px 10%;
+    padding: 30px 10%;
     box-sizing: border-box;
-    width:100%;
+    width: 100%;
     letter-spacing: 2px;
     line-height: 1.7em;
     color: #ECF5FF;
     text-align: center;
 }
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes spin- {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(-360deg);
-    }
-}
-
-@keyframes resize {
-    0% {
-        background-size: 100% 100%;
-    }
-
-    50% {
-        background-size: 180% 180%;
-    }
-
-    100% {
-        background-size: 100% 100%;
-    }
-
-}
-
-.rotate {
-    animation: spin infinite 150s linear;
-}
 
 .animated-icon1 {
     width: 30px;
@@ -1101,6 +899,7 @@ body {
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
     transform-origin: left center;
+    background: #2047CC;
 }
 
 .animated-icon1 span:nth-child(3) {
@@ -1118,7 +917,7 @@ body {
     transform: rotate(45deg);
     top: 0px;
     left: 8px;
-    background: #2047CC;
+    background: #EF7A97;
 }
 
 .animated-icon1.open span:nth-child(2) {
@@ -1141,104 +940,92 @@ body {
     display: none;
 }
 
-
-@media only screen and (min-width:768px) {
-    .mobileMenu {
-        display: none !important;
-    }
-}
-
 @media only screen and (max-width:768px) {
-    .gitBook {
-        padding: 60px 0;
-        margin-top: 60px;
+    .word{
+        font-size: 45px;
+        padding:0 5%;
     }
-
-    .gitBookLogo {
-        width: 130px;
+    .filter{
+        background-size: auto 50%;
     }
-
-    .category {
-        font-weight: 600;
-        margin: 0 10px;
-        font-size: 18px;
+    .iconBox img{
+        margin:15px;
     }
-
-    .Introduction,
-    .Experience,
-    .Skills,
-    .Project,
-    .Summary {
-        background-position: center;
-        background-attachment: unset;
+    .mouse{
+        width: 20px;
+        height: 35px;
+        left: calc(50% - 10px);
     }
-
-    .Introduction h2,
-    .Experience h2,
-    .Skills h2,
-    .Project h2,
-    .Summary h2 {
-        width: 25px;
-        height: 42px;
-        bottom: 80px;
+    .mouseBall{
+        width: 3px;
+        height: 6px;
     }
-
-    .Introduction h1,
-    .Experience h1,
-    .Skills h1,
-    .Project h1,
-    .Summary h1 {
-        font-size: 2em;
-        letter-spacing: 4px;
+    #Introduction,
+    #Experience,
+    #Skills,
+    #Project{
+        padding:35px 5%;
     }
-
-    .container {
-        padding: 2em 1em !important;
-        background-size: 300px !important;
-        background-position-y: 103% !important;
-        background-position-x: 110% !important;
+    #Introduction::before,
+    #Experience::before,
+    #Skills::before,
+    #Project::before{
+        font-size: 5em;
+        left:7%
     }
-
+    .introductionTitle h1,
+    .experienceTitle h1,
+    .skillsTitle h1,
+    .projectTitle h1{
+        font-size: 3em;
+        top:90px;
+        left:12%;
+    }
+    .introductionBox{
+        flex-direction: column;
+        margin-top: 150px;
+    }
+    .introductionLeft{
+        width:100%;
+        font-size: 16px;
+        line-height: 1.3;
+    }
+    .introductionRight{
+        width: 100%;
+    }
+    .introductionLeft p {
+        margin:8px 0;
+    }
+    .introductionButton{
+        margin: 50px 0 0 0;
+        padding: 8px 15px;
+    }
+    .introductionRight h1 {
+        font-size: 5em;
+        right:0;
+        bottom:-30px;
+    }
+    .experienceBox{
+        margin-top: 150px;
+    }
+    .cd-timeline-content h2 {
+        font-size: 16px;
+    }
+    .skillsBox,
+    .projectBox{
+        margin-top: 150px;
+        padding: 0;
+    }
+    .UrlSection{
+        border-radius: 8px 8px 0 0 ;
+    }
     .desktopMenu {
         display: none;
-    }
-
-    .MouseDown {
-        border-radius: 1.5px;
-        width: 3px;
-        height: 10px;
-        margin: 0 8px;
     }
 
     .mobileMenu {
         display: none;
         overflow: hidden;
-    }
-
-    #homeBox {
-        flex-direction: column;
-        animation: none;
-        background-position: unset;
-        background-size: cover;
-    }
-
-    .box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 60px 0 350px 0;
-    }
-
-    .BoxData {
-        width: 85vw;
-        margin-top: 20px;
-    }
-
-    .logoData {
-        margin-top: 15px;
-        max-width: 90vw;
-        letter-spacing: 1px;
     }
 
     .frame {
@@ -1273,87 +1060,13 @@ body {
     }
 
     .webData {
-        width: 90%;
+        width: 100%;
         margin: 15px 0;
         letter-spacing: 1px;
-    }
-
-    .foot {}
-
-    .foot img {
-        width: 140px;
-    }
-
-    .headPic {
-        margin: 10% 0 0 0;
-    }
-
-    .hidecircle {
-        width: 150px;
-        height: 150px;
-        font-size: 10px;
-        letter-spacing: 0.1rem;
-        visibility: visible !important;
-    }
-
-    .circle1,
-    .circle2,
-    .circle3,
-    .circle4 {
-        width: 150px;
-        height: 150px;
-    }
-
-    .circle1 {
-        background-size: 350%;
-        background-position-x: -115px;
-        background-position-y: 1px;
-    }
-
-    .circle2 {
-        background-size: 350%;
-        background-position-x: -222px;
-        background-position-y: -84px;
-    }
-
-    .circle3 {
-        background-size: 350%;
-        background-position-x: -174px;
-        background-position-y: -105px;
-    }
-
-    .circle4 {
-        background-size: 350%;
-        background-position-x: -264px;
-        background-position-y: 244px;
-    }
-
-    .circle1:hover {
-        transform: none;
-    }
-
-    .circle2:hover {
-        transform: none;
-    }
-
-    .circle3:hover {
-        transform: none;
-    }
-
-    .circle4:hover {
-        transform: none;
-    }
-
-    .homeImg {
-        width: 90px;
+        padding:10px;
     }
 
     .nav {
         display: block;
-    }
-
-    html,
-    body {
-        margin: 0;
     }
 }
