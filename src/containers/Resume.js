@@ -25,107 +25,114 @@ export default (props) => {
     let image = document.createElement('img');
     image.src = getBgUrl(document.querySelector('.filter'));
     image.onload = function () {
-      setTimeout(() => document.getElementById('loading').style.opacity = 0, 1500)
       setTimeout(() => {
-        document.getElementById('loading').style.display = 'none'
         setShow(true)
-      }, 2500)
+        document.getElementById('loading').style.opacity = 0
+      }, 1500)
+      setTimeout(() => document.getElementById('loading').style.display = 'none', 2500)
     };
     window.addEventListener('scroll',
       () => {
         const Banner = document.getElementById('Banner')
-        const BannerTop = Banner.getBoundingClientRect().top;
-        const BannerBottom = Banner.getBoundingClientRect().bottom;
         const Introduction = document.getElementById('Introduction')
         const IntroductionMenu = document.getElementById('IntroductionMenu')
         const IntroductionMmenu = document.getElementById('IntroductionMmenu')
-        const IntroductionTop = Introduction.getBoundingClientRect().top;
-        const IntroductionBottom = Introduction.getBoundingClientRect().bottom;
         const Experience = document.getElementById('Experience')
         const ExperienceMenu = document.getElementById('ExperienceMenu')
         const ExperienceMmenu = document.getElementById('ExperienceMmenu')
-        const ExperienceTop = Experience.getBoundingClientRect().top;
-        const ExperienceBottom = Experience.getBoundingClientRect().bottom;
-        const Skills = document.getElementById('Skills')
-        const SkillsMenu = document.getElementById('SkillsMenu')
-        const SkillsMmenu = document.getElementById('SkillsMmenu')
-        const SkillsTop = Skills.getBoundingClientRect().top;
-        const SkillsBottom = Skills.getBoundingClientRect().bottom;
         const Project = document.getElementById('Project')
         const ProjectMenu = document.getElementById('ProjectMenu')
         const ProjectMmenu = document.getElementById('ProjectMmenu')
-        const ProjectTop = Project.getBoundingClientRect().top;
-        const ProjectBottom = Project.getBoundingClientRect().bottom;
-        const windowsHeight = window.innerHeight - 500;
-        if (BannerTop < windowsHeight && BannerBottom >= 0) {
-          Introduction.style.opacity = 0
-          Experience.style.opacity = 0
-          Skills.style.opacity = 0
-          Project.style.opacity = 0
-          IntroductionMenu.className = "menu"
-          ExperienceMenu.className = "menu"
-          SkillsMenu.className = "menu"
-          ProjectMenu.className = "menu"
-          IntroductionMmenu.style.background = ''
-          ExperienceMmenu.style.background = ''
-          SkillsMmenu.style.background = ''
-          ProjectMmenu.style.background = ''
-        }
-        if (IntroductionTop < windowsHeight && IntroductionBottom >= 0) {
-          Introduction.style.opacity = 1
-          Experience.style.opacity = 0
-          Skills.style.opacity = 0
-          Project.style.opacity = 0
-          IntroductionMenu.className = "menuR"
-          ExperienceMenu.className = "menu"
-          SkillsMenu.className = "menu"
-          ProjectMenu.className = "menu"
-          IntroductionMmenu.style.background = 'rgba(255,255,255,0.1)'
-          ExperienceMmenu.style.background = ''
-          SkillsMmenu.style.background = ''
-          ProjectMmenu.style.background = ''
-        }
-        if (ExperienceTop < windowsHeight && ExperienceBottom >= 0) {
-          Introduction.style.opacity = 0
-          Experience.style.opacity = 1
-          Skills.style.opacity = 0
-          Project.style.opacity = 0
-          IntroductionMenu.className = "menu"
-          ExperienceMenu.className = "menuR"
-          SkillsMenu.className = "menu"
-          ProjectMenu.className = "menu"
-          IntroductionMmenu.style.background = ''
-          ExperienceMmenu.style.background = 'rgba(255,255,255,0.1)'
-          SkillsMmenu.style.background = ''
-          ProjectMmenu.style.background = ''
-        }
-        if (SkillsTop < windowsHeight && SkillsBottom >= 0) {
-          Introduction.style.opacity = 0
-          Experience.style.opacity = 0
-          Skills.style.opacity = 1
-          Project.style.opacity = 0
-          IntroductionMenu.className = "menu"
-          ExperienceMenu.className = "menu"
-          SkillsMenu.className = "menuR"
-          ProjectMenu.className = "menu"
-          IntroductionMmenu.style.background = ''
-          ExperienceMmenu.style.background = ''
-          SkillsMmenu.style.background = 'rgba(255,255,255,0.1)'
-          ProjectMmenu.style.background = ''
-        }
-        if (ProjectTop < windowsHeight && ProjectBottom >= 0) {
-          Introduction.style.opacity = 0
-          Experience.style.opacity = 0
-          Skills.style.opacity = 0
-          Project.style.opacity = 1
-          IntroductionMenu.className = "menu"
-          ExperienceMenu.className = "menu"
-          SkillsMenu.className = "menu"
-          ProjectMenu.className = "menuR"
-          IntroductionMmenu.style.background = ''
-          ExperienceMmenu.style.background = ''
-          SkillsMmenu.style.background = ''
-          ProjectMmenu.style.background = 'rgba(255,255,255,0.1)'
+        const Skills = document.getElementById('Skills')
+        const SkillsMenu = document.getElementById('SkillsMenu')
+        const SkillsMmenu = document.getElementById('SkillsMmenu')
+        if (Banner &&
+          Introduction && IntroductionMenu && IntroductionMmenu &&
+          Experience && ExperienceMenu && ExperienceMmenu &&
+          Project && ProjectMenu && ProjectMmenu &&
+          Skills && SkillsMenu && SkillsMmenu
+        ) {
+          const BannerTop = Banner.getBoundingClientRect().top;
+          const BannerBottom = Banner.getBoundingClientRect().bottom;
+          const IntroductionTop = Introduction.getBoundingClientRect().top;
+          const IntroductionBottom = Introduction.getBoundingClientRect().bottom;
+          const ExperienceTop = Experience.getBoundingClientRect().top;
+          const ExperienceBottom = Experience.getBoundingClientRect().bottom;
+          const SkillsTop = Skills.getBoundingClientRect().top;
+          const SkillsBottom = Skills.getBoundingClientRect().bottom;
+          const ProjectTop = Project.getBoundingClientRect().top;
+          const ProjectBottom = Project.getBoundingClientRect().bottom;
+          const windowsHeight = window.innerHeight - 500;
+          if (BannerTop < windowsHeight && BannerBottom >= 0) {
+            Introduction.style.opacity = 0
+            Experience.style.opacity = 0
+            Skills.style.opacity = 0
+            Project.style.opacity = 0
+            IntroductionMenu.className = "menu"
+            ExperienceMenu.className = "menu"
+            SkillsMenu.className = "menu"
+            ProjectMenu.className = "menu"
+            IntroductionMmenu.style.background = ''
+            ExperienceMmenu.style.background = ''
+            SkillsMmenu.style.background = ''
+            ProjectMmenu.style.background = ''
+          }
+          if (IntroductionTop < windowsHeight && IntroductionBottom >= 0) {
+            Introduction.style.opacity = 1
+            Experience.style.opacity = 0
+            Skills.style.opacity = 0
+            Project.style.opacity = 0
+            IntroductionMenu.className = "menuR"
+            ExperienceMenu.className = "menu"
+            SkillsMenu.className = "menu"
+            ProjectMenu.className = "menu"
+            IntroductionMmenu.style.background = 'rgba(255,255,255,0.1)'
+            ExperienceMmenu.style.background = ''
+            SkillsMmenu.style.background = ''
+            ProjectMmenu.style.background = ''
+          }
+          if (ExperienceTop < windowsHeight && ExperienceBottom >= 0) {
+            Introduction.style.opacity = 0
+            Experience.style.opacity = 1
+            Skills.style.opacity = 0
+            Project.style.opacity = 0
+            IntroductionMenu.className = "menu"
+            ExperienceMenu.className = "menuR"
+            SkillsMenu.className = "menu"
+            ProjectMenu.className = "menu"
+            IntroductionMmenu.style.background = ''
+            ExperienceMmenu.style.background = 'rgba(255,255,255,0.1)'
+            SkillsMmenu.style.background = ''
+            ProjectMmenu.style.background = ''
+          }
+          if (SkillsTop < windowsHeight && SkillsBottom >= 0) {
+            Introduction.style.opacity = 0
+            Experience.style.opacity = 0
+            Skills.style.opacity = 1
+            Project.style.opacity = 0
+            IntroductionMenu.className = "menu"
+            ExperienceMenu.className = "menu"
+            SkillsMenu.className = "menuR"
+            ProjectMenu.className = "menu"
+            IntroductionMmenu.style.background = ''
+            ExperienceMmenu.style.background = ''
+            SkillsMmenu.style.background = 'rgba(255,255,255,0.1)'
+            ProjectMmenu.style.background = ''
+          }
+          if (ProjectTop < windowsHeight && ProjectBottom >= 0) {
+            Introduction.style.opacity = 0
+            Experience.style.opacity = 0
+            Skills.style.opacity = 0
+            Project.style.opacity = 1
+            IntroductionMenu.className = "menu"
+            ExperienceMenu.className = "menu"
+            SkillsMenu.className = "menu"
+            ProjectMenu.className = "menuR"
+            IntroductionMmenu.style.background = ''
+            ExperienceMmenu.style.background = ''
+            SkillsMmenu.style.background = ''
+            ProjectMmenu.style.background = 'rgba(255,255,255,0.1)'
+          }
         }
       }
     )
@@ -135,7 +142,7 @@ export default (props) => {
       <Animation />
       <Menu />
       <Banner show={show} />
-      {show &&<Introduction />}
+      {show && <Introduction />}
       {show && <Experience />}
       {show && <Skills />}
       {show && <Project />}

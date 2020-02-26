@@ -16,6 +16,10 @@ a {
     text-decoration: none;
 }
 
+*:focus {
+    outline: none;
+}
+
 .container {
     overflow: hidden;
     padding-bottom: 100px;
@@ -351,6 +355,10 @@ a {
     color: #ECF5FF !important;
 }
 
+.skillbar-title span {
+    font-weight: 400 !important;
+}
+
 // Skills End
 // Project Start
 .Project {
@@ -404,7 +412,6 @@ a {
 .projectBox {
     position: relative;
     margin-top: 250px;
-    padding: 0 10%;
 }
 
 .slick-dots li button:before {
@@ -816,11 +823,11 @@ a {
 }
 
 .Url {
-    width: 68%;
+    width: 70%;
     background: rgb(32, 33, 36);
     font-size: 10px;
-    padding: 1px 12px;
-    border-radius: 3px;
+    padding: 2px 15px;
+    border-radius: 15px;
     color: #ECF5FF;
 }
 
@@ -835,6 +842,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 10%;
 }
 
 .webData {
@@ -1051,10 +1059,29 @@ a {
         padding: 0;
     }
 
-    .UrlSection {
-        border-radius: 8px 8px 0 0;
+    .skillbar {
+        height: 30px !important;
+        line-height: 30px !important;
+        margin-bottom: 10px !important;
     }
 
+    .skillbar-title span {
+        font-size: 12px !important;
+        padding: 0 10px !important;
+    }
+
+    .skillbar-percent {
+        font-size: 10px !important;
+    }
+
+    .UrlSection {
+        border-radius: 8px 8px 0 0;
+        padding: 10px 25px 5px 15px;
+    }
+    .Dot{
+        width: 8px;
+        height: 8px;
+    }
     .desktopMenu {
         display: none;
     }
@@ -1095,9 +1122,16 @@ a {
         margin: 0;
     }
 
+    .webBox {
+        padding: 0;
+    }
+    .Url {
+        padding:1px 12px;
+        font-size: 10px;
+    }
     .webData {
         width: 100%;
-        margin: 15px 0;
+        margin: 10px 0;
         letter-spacing: 1px;
         padding: 10px;
     }
