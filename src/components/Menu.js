@@ -12,19 +12,15 @@ export default (props) => {
     setMenuShow(!menuShow);
     if (!menuShow) {
       $('.frame').css('background-color', 'rgba(21, 21, 21, 0.96)')
-      $('.frame').css('box-shadow', '0 4px 8px 0 rgba(12,0,51,0.1)')
     } else {
       $('.frame').css('background-color', 'rgba(0, 0, 0, 0)')
-      $('.frame').css('box-shadow', 'none')
     }
   }
   $(document).scroll(() => {
-    if (window.innerWidth > 768) {
-      if ($(window).scrollTop() > (window.innerHeight - 100)) {
-        $('.menu_s').css('height', '70px')
-      } else if ($(window).scrollTop() < (window.innerHeight - 100)) {
-        $('.menu_s').css('height', '0')
-      }
+    if ($(window).scrollTop() > (window.innerHeight - 100)) {
+      $('.menu_s').css('height', '70px')
+    } else if ($(window).scrollTop() < (window.innerHeight - 100)) {
+      $('.menu_s').css('height', '0')
     }
   });
   const sbot = useSelector((state) => state.sbot);

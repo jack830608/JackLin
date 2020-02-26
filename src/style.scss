@@ -357,6 +357,8 @@ a {
 
 .skillbar-title span {
     font-weight: 400 !important;
+    padding: 0 10px !important;
+    text-align: center;
 }
 
 // Skills End
@@ -950,8 +952,8 @@ a {
 
 @media only screen and (max-width:768px) {
     .word {
-        font-size: 45px;
-        padding: 0 5%;
+        font-size: 48px;
+        padding: 0 2%;
     }
 
     .filter {
@@ -959,7 +961,9 @@ a {
     }
 
     .iconBox img {
-        margin: 15px;
+        margin: 12px;
+        width: 15px;
+        height: 15px;
     }
 
     .mouse {
@@ -1065,7 +1069,6 @@ a {
     .skillbar-title span {
         font-size: 12px !important;
         padding: 0 5px !important;
-        text-align: center;
     }
 
     .skillbar-percent {
@@ -1109,10 +1112,6 @@ a {
 
     .menu {
         padding: 10px;
-    }
-
-    .menu_s {
-        display: none;
     }
 
     .WebBrowser {
