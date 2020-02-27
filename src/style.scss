@@ -990,6 +990,7 @@ a {
     .word {
         font-size: 48px;
         padding: 0 2%;
+        letter-spacing: 0;
     }
 
     .filter {
@@ -1080,6 +1081,7 @@ a {
         div{
             font-size: 16px;
             background-attachment: unset;
+            letter-spacing: 0;
         }
     }
     .introductionButton,
@@ -1119,10 +1121,15 @@ a {
     }
 
     .skillbar-title span {
-        font-size: 12px !important;
-        padding: 0 5px !important;
+        font-size: 10px !important;
+        padding: 0 !important;
     }
-
+    .skillbar-title{
+        width:90px;
+    }
+    .skillbar-bar{
+        left: 90px;
+    }
     .skillbar-percent {
         font-size: 10px !important;
     }

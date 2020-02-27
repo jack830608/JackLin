@@ -27,12 +27,12 @@ export default (props) => {
   }, [props.show])
   return (
     <div id="Banner">
-      <div class="filter">
-        <div class="head">
-          <div class="word">
+      <div className="filter">
+        <div className="head">
+          <div className="word">
             {word}
-            <span class="wordLine" style={{ animation: animation }}>｜</span>
-            <div class="iconBox" style={{ opacity: icon }}>
+            <span className="wordLine" style={{ animation: animation }}>｜</span>
+            <div className="iconBox" style={{ opacity: icon }}>
               <a href="https://www.facebook.com/WEIJIE.LIN7777" target="_blank">
                 <img src="/images/facebook.svg"/>
               </a>
@@ -52,8 +52,8 @@ export default (props) => {
           </div>
         </div>
       </div>
-      <div class="mouse" onClick={()=>findDistance('Introduction')}>
-        <div class="mouseBall"/>
+      <div className="mouse" onClick={()=>findDistance('Introduction')}>
+        <div className="mouseBall"/>
       </div>
     </div>
   );
