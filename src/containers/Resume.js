@@ -5,7 +5,7 @@ import Animation from '../components/Loading/animation';
 import Introduction from '../components/Introduction';
 import Experience from '../components/Experience';
 import Skills from '../components/Skills';
-import Project from '../components/Project';
+import Project from '../components/Project/';
 
 export default (props) => {
   const [show, setShow] = useState(false)
