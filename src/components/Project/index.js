@@ -27,12 +27,12 @@ export default (props) => {
             <Web
               url="https://www.injiaoyun.com"
               image="injiaoyun.png"
-              data="This is my first project in the  software industry, Mainly responsible for the small-scale function development, front-end UI adjustment, and third-party API concatenation."
+              data="This is my first project in the software industry, Mainly responsible for the small-scale function development, front-end UI adjustment, and connect the third-party API."
             />
             <Web
               url="https://api.lifegoez.com/admin/signin"
               image="beauty_line_bot.png"
-              data="This is my independent project, Its the reservation system for beauty nail industry, stores can set branch info, opening hours, and store closure dates in the dashboard, then customers can use the Line App to book and check the status of the order."
+              data="This is my independent project, It's the reservation system for beauty nail industry, stores can set branch info, opening hours, and store closure dates in the dashboard, then customers can use the Line App to book and check the status of the order."
             />
             <Web
               url="https://www.sbot.ai"
