@@ -29,7 +29,7 @@ export default (props) => {
                   </span>
                 </div>
                 <p>
-                  Vpon is an advertising company combining big data ,for me it's completely different from my previous job. There are more then 70 engineers in Vpon so we can exchange skills with each other and exposed to many new skills not limited to the front-end.
+                  Vpon is an advertising company combining big data ,for me it's completely different from my previous job. There are more than 70 engineers in Vpon so we can exchange skills with each other and exposed to many new skills not limited to the front-end.
                   </p>
               </div>
             </div>
@@ -50,7 +50,7 @@ export default (props) => {
                   </span>
                 </div>
                 <p>
-                  During the time at the Tripmoment, I have been responsible for more thing ,including Front-end and Back-end. It also let me to learn more skill and continue to help company develop new products.
+                  During the time at the Tripmoment, I have been responsible for more things ,including Front-end and Back-end. It also let me learn more skill and continue to help the company develop new products.
                   </p>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default (props) => {
                   </i>
                   </span>
                 </div>
-                <p>Since the love of AI had entered MemePR, there is no difference in seniority here, As long as what is done is right, it can be played. Finally with the efforts of everyone, we have successfully created our first chatbot
+                <p>Since the love of AI had entered MemePR, there is no difference in seniority here, As long as what is done is right, it can be played. Finally, with the efforts of everyone, we have successfully created our first chatbot
                   <a
                     href="https://www.sbot.ai"
                     className="link"
@@ -106,7 +106,7 @@ export default (props) => {
                   </i>
                   </span>
                 </div>
-                <p>I have experienced a completely different corporate culture and agile spirit than the previous company, and always thinks about the balance between efficiency and quality. It can quickly bring products to market while ensuring the replacement of product value. The process of verifying whether it meets the needs of customers is essentially a baptism of flames, giving me a new understanding of teamwork, and making me more accountable.</p>
+                <p>I have experienced a completely different corporate culture and agile spirit than the previous company and always thinks about the balance between efficiency and quality. It can quickly bring products to the market while ensuring the replacement of product value. The process of verifying whether it meets the needs of customers is essentially a baptism of flames, giving me a new understanding of teamwork, and making me more accountable.</p>
               </div>
             </div>
           </section>
