@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.19.2",
     "express": "^4.17.1",
     "jquery": "^3.4.1",
     "node-sass": "^4.12.0",
@@ -20,7 +21,7 @@
   "scripts": {
     "start": "node index.js",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "mocha",
     "eject": "react-scripts eject",
     "dev": "PORT=3000 react-scripts start"
   },
@@ -38,5 +39,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.0"
   }
 }
