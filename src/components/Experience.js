@@ -29,8 +29,7 @@ export default (props) => {
                   </span>
                 </div>
                 <p>
-                  Vpon is an advertising company combining big data ,for me it's completely different from my previous job. There are more than 70 engineers in Vpon so we can exchange skills with each other and exposed to many new skills not limited to the front-end.
-                  </p>
+                  Vpon is an advertising company combining big data, for me it's completely different from my previous job. There are more than 70 engineers in Vpon so we can exchange skills with each other and exposed to many new skills not limited to the front-end.                  </p>
               </div>
             </div>
             <div className="cd-timeline-block" >
@@ -50,7 +49,7 @@ export default (props) => {
                   </span>
                 </div>
                 <p>
-                  During the time at the Tripmoment, I have been responsible for more things ,including Front-end and Back-end. It also let me learn more skill and continue to help the company develop new products.
+                  During the time at the Tripmoment, I have been responsible for more things ,including Front-end and Back-end. It also let me learn more skill and continue to help the company develop new products. Although I only worked here for three months, until now I have been maintaining Tripmoment part-time. 
                   </p>
               </div>
             </div>
@@ -79,7 +78,7 @@ export default (props) => {
                   >
                     Sbot
                     </a>
-                  。</p>
+                  .</p>
               </div>
             </div>
             <div className="cd-timeline-block">
@@ -90,7 +89,7 @@ export default (props) => {
                 <a
                     href="https://www.injiaoyun.com/jack.html"
                     className="link"
-                    style={{marginLeft: '5px' }}
+                    style={{ marginLeft: '5px' }}
                     target="blank"
                   >
                     Recommendation Letter

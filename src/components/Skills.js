@@ -10,11 +10,12 @@ export default (props) => {
     { type: "Javascript", level: 85 },
     { type: "React/Redux", level: 85 },
     { type: "Jquery", level: 75 },
-    { type: "Node.js", level: 75 },
+    { type: "Node.js", level: 80 },
     { type: "MongoDB", level: 60 },
     { type: "MySQL", level: 60 },
     { type: "Docker", level: 70 },
-    { type: "ShellScript", level: 70 },
+    { type: "ShellScript", level: 60 },
+    { type: "Python", level: 50 },
   ];
   const colors = {
     "bar": "linear-gradient(45deg,rgba(75,105,205,0.4) ,rgba(135,153,220,0.8))",
