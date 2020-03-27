@@ -19,8 +19,10 @@ export default (props) => {
   $(document).scroll(() => {
     if ($(window).scrollTop() > (window.innerHeight - 100)) {
       $('.menu_s').css('height', '70px')
+      $('.logo').css('opacity', 1)
     } else if ($(window).scrollTop() < (window.innerHeight - 100)) {
       $('.menu_s').css('height', '0')
+      $('.logo').css('opacity', 0)
     }
   });
   const sbot = useSelector((state) => state.sbot);
