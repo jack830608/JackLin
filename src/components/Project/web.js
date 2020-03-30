@@ -11,7 +11,7 @@ export default (props) => {
     return (
         <div>
             <div className="webBox">
-                <div className="WebBrowser" onClick={() => window.open(props.url, '_blank')}>
+                {props.device !== 'mobile' ? <div className="WebBrowser" onClick={() => window.open(props.url, '_blank')}>
                     <div className="UrlSection">
                         <div className="DotHolder">
                             <div className="Dot" style={{ background: random === 0 ? '#EF7A97' : '' }} />
@@ -25,7 +25,10 @@ export default (props) => {
                     <div className="Web">
                         <img src={`/images/project/${props.image}`} width="100%" />
                     </div>
-                </div>
+                </div> :
+                    <div className="WebBrowser" onClick={() => window.open(props.url, '_blank')}>
+                        <img src={`/images/project/${props.image}`} width="100%" />
+                    </div>}
                 <div className="webData">
                     {props.data}
                 </div>
