@@ -404,16 +404,22 @@ a {
 
 .skillbar {
     background: transparent !important;
+    height:25px !important;
+    line-height: 25px !important;
+    margin-bottom: 10px !important;
+    font-family: Kanit;
 }
 
 .skillbar-percent {
     color: #ECF5FF !important;
+    font-size: 14px !important;
 }
 
 .skillbar-title span {
-    font-weight: 400 !important;
+    font-weight: 300 !important;
     padding: 0 10px !important;
     text-align: center;
+    font-size: 12px !important;
 }
 
 // Skills End
@@ -1125,14 +1131,7 @@ a {
         padding: 0;
     }
 
-    .skillbar {
-        height: 30px !important;
-        line-height: 30px !important;
-        margin-bottom: 10px !important;
-    }
-
     .skillbar-title span {
-        font-size: 12px !important;
         padding: 0 !important;
     }
     .skillbar-title{
@@ -1141,8 +1140,12 @@ a {
     .skillbar-bar{
         left: 90px;
     }
+    .skillbar{
+        height:20px !important;
+        line-height: 20px !important;
+    }
     .skillbar-percent {
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
 
     .UrlSection {

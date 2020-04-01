@@ -16,6 +16,7 @@ export default (props) => {
     { type: "Docker", level: 70 },
     { type: "ShellScript", level: 60 },
     { type: "Python", level: 50 },
+    { type: "Git", level: 80 },
   ];
   const colors = {
     "bar": "linear-gradient(45deg,rgba(75,105,205,0.4) ,rgba(135,153,220,0.8))",
