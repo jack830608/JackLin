@@ -17,13 +17,9 @@ export default (props) => {
     }
   }
   $(document).scroll(() => {
-    if ($(window).scrollTop() > (window.innerHeight - 100)) {
-      $('.menu_s').css('height', '70px')
-      $('.logo').css('opacity', 1)
-    } else if ($(window).scrollTop() < (window.innerHeight - 100)) {
-      $('.menu_s').css('height', '0')
-      $('.logo').css('opacity', 0)
-    }
+    var h = document.body.scrollHeight - $(window).height()
+    var c = $(document).scrollTop();
+    $('.process').css('width',`${c/h * 100}vw`)
   });
   const sbot = useSelector((state) => state.sbot);
   if (sbot) {
@@ -35,14 +31,14 @@ export default (props) => {
   }
   return (
     <div className="frame">
-      <div className="menu_s" />
+      <div className="process"/>
       <div className="frameSection1">
         <img src="images/icon_nobackground.png" className="logo" onClick={() => findDistance('Banner')} />
         <div className="desktopMenu">
-          <div id="IntroductionMenu" className="menu" onClick={() => findDistance('Introduction')}>Introduction</div>
-          <div id="ExperienceMenu" className="menu" onClick={() => findDistance('Experience')}>Experience</div>
-          <div id="SkillsMenu" className="menu" onClick={() => findDistance('Skills')}>Skills</div>
-          <div id="ProjectMenu" className="menu" onClick={() => findDistance('Project')}>Project</div>
+          <div id="IntroductionMenu" className="menu" onClick={() => findDistance('Introduction')}>INTRODUCTION</div>
+          <div id="ExperienceMenu" className="menu" onClick={() => findDistance('Experience')}>EXPERIENCE</div>
+          <div id="SkillsMenu" className="menu" onClick={() => findDistance('Skills')}>SKILLS</div>
+          <div id="ProjectMenu" className="menu" onClick={() => findDistance('Project')}>PROJECT</div>
         </div>
         <div className="nav" onTouchEnd={MenuAction}>
           <div className="animated-icon1">
@@ -62,7 +58,7 @@ export default (props) => {
               MenuAction();
             }}
         >
-          Introduction
+          INTRODUCTION
           </div>
         <div
           className="Mmenu"
@@ -73,7 +69,7 @@ export default (props) => {
               MenuAction();
             }}
         >
-          Experience
+          EXPERIENCE
           </div>
         <div
           className="Mmenu"
@@ -84,7 +80,7 @@ export default (props) => {
               MenuAction();
             }}
         >
-          Skills
+          SKILLS
           </div>
         <div
           className="Mmenu"
@@ -95,7 +91,7 @@ export default (props) => {
               MenuAction();
             }}
         >
-          Project
+          PROJECT
           </div>
       </div>
     </div>
