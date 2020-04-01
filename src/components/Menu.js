@@ -11,7 +11,7 @@ export default (props) => {
     $('.mobileMenu').slideToggle();
     setMenuShow(!menuShow);
     if (!menuShow) {
-      $('.frame').css('background-color', 'rgba(21, 21, 21, 0.96)')
+      $('.frame').css('background-color', 'rgba(21, 21, 21, 0.97)')
     } else {
       $('.frame').css('background-color', 'rgba(0, 0, 0, 0)')
     }
