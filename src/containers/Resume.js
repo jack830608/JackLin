@@ -46,6 +46,9 @@ export default (props) => {
         const Skills = document.getElementById('Skills')
         const SkillsMenu = document.getElementById('SkillsMenu')
         const SkillsMmenu = document.getElementById('SkillsMmenu')
+        const Logo = document.querySelector('.logo')
+        const Menu = document.querySelector('.desktopMenu')
+        const Frame = document.querySelector('.frameSection1')
         if (Banner &&
           Introduction && IntroductionMenu && IntroductionMmenu &&
           Experience && ExperienceMenu && ExperienceMmenu &&
@@ -64,6 +67,9 @@ export default (props) => {
           const ProjectBottom = Project.getBoundingClientRect().bottom;
           const windowsHeight = window.innerHeight - 500;
           if (BannerTop < windowsHeight && BannerBottom >= 0) {
+            Logo.style.transform = 'scale(0.9)'
+            Menu.style.transform = 'scale(0.9)'
+            Frame.style.opacity = 0.6
             Introduction.style.opacity = 0
             Experience.style.opacity = 0
             Skills.style.opacity = 0
@@ -78,6 +84,9 @@ export default (props) => {
             ProjectMmenu.style.background = ''
           }
           if (IntroductionTop < windowsHeight && IntroductionBottom >= 0) {
+            Logo.style.transform = 'scale(1)'
+            Menu.style.transform = 'scale(1)'
+            Frame.style.opacity = 1
             Introduction.style.opacity = 1
             Experience.style.opacity = 0
             Skills.style.opacity = 0
@@ -92,6 +101,9 @@ export default (props) => {
             ProjectMmenu.style.background = ''
           }
           if (ExperienceTop < windowsHeight && ExperienceBottom >= 0) {
+            Logo.style.transform = 'scale(1)'
+            Menu.style.transform = 'scale(1)'
+            Frame.style.opacity = 1
             Introduction.style.opacity = 0
             Experience.style.opacity = 1
             Skills.style.opacity = 0
@@ -106,6 +118,9 @@ export default (props) => {
             ProjectMmenu.style.background = ''
           }
           if (SkillsTop < windowsHeight && SkillsBottom >= 0) {
+            Logo.style.transform = 'scale(1)'
+            Menu.style.transform = 'scale(1)'
+            Frame.style.opacity = 1
             Introduction.style.opacity = 0
             Experience.style.opacity = 0
             Skills.style.opacity = 1
@@ -120,6 +135,9 @@ export default (props) => {
             ProjectMmenu.style.background = ''
           }
           if (ProjectTop < windowsHeight && ProjectBottom >= 0) {
+            Logo.style.transform = 'scale(1)'
+            Menu.style.transform = 'scale(1)'
+            Frame.style.opacity = 1
             Introduction.style.opacity = 0
             Experience.style.opacity = 0
             Skills.style.opacity = 0
