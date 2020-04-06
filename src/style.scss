@@ -37,6 +37,7 @@ a {
     height:4px;
     transition: 100ms linear;
     border-radius: 1px;
+    z-index:9998;
 }
 
 // Banner Start
@@ -723,17 +724,17 @@ a {
     transition: 300ms linear;
 }
 
-.frameSection1 {
+.frameSection {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     opacity: 0.6;
     transition: 0.3s linear;
 }
 %menu{
-    margin: 0 18px;
-    padding: 4px 2px;
+    margin: 0 15px;
+    padding: 4px;
     cursor: pointer;
     letter-spacing: 4px;
     font-size: 12px;
@@ -824,7 +825,7 @@ a {
 
 .desktopMenu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
     -webkit-overflow-scrolling: touch;
     transform: scale(0.9);
@@ -1170,14 +1171,12 @@ a {
     .frame {
         padding: 10px 15px;
         width: 100%;
-        border-radius: 15px 15px 15px 3px;
         background: rgba(0, 0, 0, 0);
         box-sizing: border-box;
     }
 
-    .frameSection1 {
+    .frameSection {
         padding-bottom: 10px;
-        align-items: center;
     }
 
     .logo {

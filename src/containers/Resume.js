@@ -48,7 +48,7 @@ export default (props) => {
         const SkillsMmenu = document.getElementById('SkillsMmenu')
         const Logo = document.querySelector('.logo')
         const Menu = document.querySelector('.desktopMenu')
-        const Frame = document.querySelector('.frameSection1')
+        const Frame = document.querySelector('.frameSection')
         if (Banner &&
           Introduction && IntroductionMenu && IntroductionMmenu &&
           Experience && ExperienceMenu && ExperienceMmenu &&

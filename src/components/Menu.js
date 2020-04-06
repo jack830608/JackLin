@@ -19,7 +19,7 @@ export default (props) => {
   $(document).scroll(() => {
     var h = document.body.scrollHeight - $(window).height()
     var c = $(document).scrollTop();
-    $('.process').css('width',`${c/h * 100}vw`)
+    $('.process').css('width', `${c / h * 100}vw`)
   });
   const sbot = useSelector((state) => state.sbot);
   if (sbot) {
@@ -30,69 +30,71 @@ export default (props) => {
     dispatch({ type: 'CHECK_SBOT', payload: false });
   }
   return (
-    <div className="frame">
-      <div className="process"/>
-      <div className="frameSection1">
-        <img src="images/icon_nobackground.png" className="logo" onClick={() => findDistance('Banner')} />
-        <div className="desktopMenu">
-          <div id="IntroductionMenu" className="menu" onClick={() => findDistance('Introduction')}>INTRODUCTION</div>
-          <div id="ExperienceMenu" className="menu" onClick={() => findDistance('Experience')}>EXPERIENCE</div>
-          <div id="SkillsMenu" className="menu" onClick={() => findDistance('Skills')}>SKILLS</div>
-          <div id="ProjectMenu" className="menu" onClick={() => findDistance('Project')}>PROJECT</div>
-        </div>
-        <div className="nav" onTouchEnd={MenuAction}>
-          <div className="animated-icon1">
-            <span />
-            <span />
-            <span />
+    <div>
+      <div className="process" />
+      <div className="frame">
+        <div className="frameSection">
+          <img src="images/icon_nobackground.png" className="logo" onClick={() => findDistance('Banner')} />
+          <div className="desktopMenu">
+            <div id="IntroductionMenu" className="menu" onClick={() => findDistance('Introduction')}>INTRODUCTION</div>
+            <div id="ExperienceMenu" className="menu" onClick={() => findDistance('Experience')}>EXPERIENCE</div>
+            <div id="SkillsMenu" className="menu" onClick={() => findDistance('Skills')}>SKILLS</div>
+            <div id="ProjectMenu" className="menu" onClick={() => findDistance('Project')}>PROJECT</div>
+          </div>
+          <div className="nav" onTouchEnd={MenuAction}>
+            <div className="animated-icon1">
+              <span />
+              <span />
+              <span />
+            </div>
           </div>
         </div>
-      </div>
-      <div className="mobileMenu">
-        <div
-          className="Mmenu"
-          id="IntroductionMmenu"
-          onClick={
-            () => {
-              findDistance('Introduction');
-              MenuAction();
-            }}
-        >
-          INTRODUCTION
+        <div className="mobileMenu">
+          <div
+            className="Mmenu"
+            id="IntroductionMmenu"
+            onClick={
+              () => {
+                findDistance('Introduction');
+                MenuAction();
+              }}
+          >
+            INTRODUCTION
           </div>
-        <div
-          className="Mmenu"
-          id="ExperienceMmenu"
-          onClick={
-            () => {
-              findDistance('Experience');
-              MenuAction();
-            }}
-        >
-          EXPERIENCE
+          <div
+            className="Mmenu"
+            id="ExperienceMmenu"
+            onClick={
+              () => {
+                findDistance('Experience');
+                MenuAction();
+              }}
+          >
+            EXPERIENCE
           </div>
-        <div
-          className="Mmenu"
-          id="SkillsMmenu"
-          onClick={
-            () => {
-              findDistance('Skills');
-              MenuAction();
-            }}
-        >
-          SKILLS
+          <div
+            className="Mmenu"
+            id="SkillsMmenu"
+            onClick={
+              () => {
+                findDistance('Skills');
+                MenuAction();
+              }}
+          >
+            SKILLS
           </div>
-        <div
-          className="Mmenu"
-          id="ProjectMmenu"
-          onClick={
-            () => {
-              findDistance('Project');
-              MenuAction();
-            }}
-        >
-          PROJECT
+          <div
+            className="Mmenu"
+            id="ProjectMmenu"
+            onClick={
+              () => {
+                findDistance('Project');
+                MenuAction();
+              }}
+          >
+            PROJECT
           </div>
+        </div>
       </div>
     </div>
   );
