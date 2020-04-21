@@ -33,27 +33,30 @@ export default (props) => {
             {word}
             <span className="wordLine" style={{ animation: animation }}>｜</span>
             <div className="iconBox" style={{ opacity: icon }}>
-              <a href="https://www.facebook.com/WEIJIE.LIN7777" target="_blank">
+              {/* <a href="https://www.facebook.com/WEIJIE.LIN7777" target="_blank">
                 <img src="/images/facebook.svg"/>
+              </a> */}
+              <a href="https://blog.jack1in.com" target="_blank">
+                <img src="/images/blogger.svg" />
               </a>
               <a href="https://www.linkedin.com/in/jack1in/" target="_blank">
-                <img src="/images/linkedin.svg"/>
+                <img src="/images/linkedin.svg" />
               </a>
               <a href="https://github.com/jack830608" target="_blank">
-                <img src="/images/github.svg"/>
+                <img src="/images/github.svg" />
               </a>
               <a href="https://line.me/ti/p/0f4vdsbN3Z" target="_blank">
-                <img src="/images/line.svg"/>
+                <img src="/images/line.svg" />
               </a>
               <a href="mailto:jack830608@gmail.com" target="_blank">
-                <img src="/images/google.svg"/>
+                <img src="/images/google.svg" />
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div className="mouse" onClick={()=>findDistance('Introduction')}>
-        <div className="mouseBall"/>
+      <div className="mouse" onClick={() => findDistance('Introduction')}>
+        <div className="mouseBall" />
       </div>
     </div>
   );
