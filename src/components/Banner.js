@@ -33,11 +33,8 @@ export default (props) => {
             {word}
             <span className="wordLine" style={{ animation: animation }}>｜</span>
             <div className="iconBox" style={{ opacity: icon }}>
-              {/* <a href="https://www.facebook.com/WEIJIE.LIN7777" target="_blank">
+              <a href="https://www.facebook.com/WEIJIE.LIN7777" target="_blank">
                 <img src="/images/facebook.svg"/>
-              </a> */}
-              <a href="https://blog.jack1in.com" target="_blank">
-                <img src="/images/blogger.svg" />
               </a>
               <a href="https://www.linkedin.com/in/jack1in/" target="_blank">
                 <img src="/images/linkedin.svg" />
@@ -50,6 +47,9 @@ export default (props) => {
               </a>
               <a href="mailto:jack830608@gmail.com" target="_blank">
                 <img src="/images/google.svg" />
+              </a>
+              <a href="https://blog.jack1in.com" target="_blank">
+                <img src="/images/blogger.svg" />
               </a>
             </div>
           </div>
