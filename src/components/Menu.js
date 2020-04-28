@@ -40,7 +40,7 @@ export default (props) => {
             <div id="ExperienceMenu" className="menu" onClick={() => findDistance('Experience')}>EXPERIENCE</div>
             <div id="SkillsMenu" className="menu" onClick={() => findDistance('Skills')}>SKILLS</div>
             <div id="ProjectMenu" className="menu" onClick={() => findDistance('Project')}>PROJECT</div>
-            <div id="BlogMenu" className="menuB" onClick={() => window.open('https://blog.jack1in.com','_blank')}>BLOG</div>
+            <div id="BlogMenu" className="menuB" onClick={() => window.open('https://www.jack1in.blog','_blank')}>BLOG</div>
           </div>
           <div className="nav" onTouchEnd={MenuAction}>
             <div className="animated-icon1">
@@ -102,7 +102,7 @@ export default (props) => {
             onClick={
               () => {
                 MenuAction();
-                window.open('https://blog.jack1in.com','_blank');
+                window.open('https://www.jack1in.blog','_blank');
               }}
           >
             BLOG
