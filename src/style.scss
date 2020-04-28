@@ -376,7 +376,8 @@ a {
 }
 
 .skillsTitle,
-.skillsTitle h1 {
+.skillsTitle h1,
+.skillsTitle .skillsSubtitle {
     background: url('/images/Skills.jpg') no-repeat;
     background-position: center;
     background-size: 100%;
@@ -396,6 +397,20 @@ a {
     font-weight: 100;
     font-family: Kanit;
 }
+.skillsTitle .skillsSubtitle {
+    z-index: 1;
+    font-size: 3em;
+    top: calc(50% - 35px);
+    left: 30%;
+    letter-spacing: 2px;
+    position: absolute;
+    cursor: default;
+    color: transparent !important;
+    -webkit-background-clip: text;
+    font-weight: 100;
+    font-family: Kanit;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
 .skillsBox {
     position: relative;
@@ -405,9 +420,9 @@ a {
 
 .skillbar {
     background: transparent !important;
-    height:25px !important;
-    line-height: 25px !important;
-    margin-bottom: 10px !important;
+    height:20px !important;
+    line-height: 20px !important;
+    margin-bottom: 8px !important;
     font-family: Kanit;
 }
 
@@ -1156,7 +1171,10 @@ a {
         margin-top: 150px;
         padding: 0;
     }
-
+    .skillsTitle .skillsSubtitle {
+        font-size: 1.8em;
+        left:35%;
+    }
     .skillbar-title span {
         padding: 0 !important;
     }
@@ -1169,8 +1187,10 @@ a {
     .skillbar{
         height:20px !important;
         line-height: 20px !important;
+        margin-bottom: 5px !important;
     }
     .skillbar-percent {
+        display: none;
         font-size: 12px !important;
     }
 
