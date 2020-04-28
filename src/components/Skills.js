@@ -32,24 +32,24 @@ export default (props) => {
     { type: "GTM、GA", level: 75 },
   ];
   const FrontEndColors = {
-    "bar": "linear-gradient(45deg,rgba(75,105,205,0.4) ,rgba(135,153,220,0.8))",
+    "bar": "rgba(236, 245, 255, 0.2)",
     "title": {
       "text": "#ECF5FF",
-      "background": "linear-gradient(45deg,rgba(75,105,205,0.2) ,rgba(75,105,205,0.8))",
+      "background": "rgba(236, 245, 255, 0.2)",
     }
   }
   const BackEndColors = {
-    "bar": "linear-gradient(45deg,rgba(75,105,205,0.2) ,rgba(75,105,205,0.8))",
+    "bar": "rgba(236, 245, 255, 0.3)",
     "title": {
       "text": "#ECF5FF",
-      "background": "linear-gradient(45deg,rgba(75,105,205,0.4) ,rgba(135,153,220,0.8))",
+      "background": "rgba(236, 245, 255, 0.3)",
     }
   }
   const OthersColors = {
-    "bar": "linear-gradient(45deg,rgba(75,105,205,0.4) ,rgba(135,153,220,0.8))",
+    "bar": "rgba(236, 245, 255, 0.4)",
     "title": {
       "text": "#ECF5FF",
-      "background": "linear-gradient(45deg,rgba(75,105,205,0.2) ,rgba(75,105,205,0.8))",
+      "background": "rgba(236, 245, 255, 0.4)",
     }
   }
 
