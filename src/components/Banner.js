@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import Particles from 'react-particles-js';
+
 
 export default (props) => {
   const findDistance = useSelector((state) => state.findDistance);
@@ -34,7 +36,7 @@ export default (props) => {
             <span className="wordLine" style={{ animation: animation }}>｜</span>
             <div className="iconBox" style={{ opacity: icon }}>
               <a href="https://www.facebook.com/WEIJIE.LIN7777" target="_blank">
-                <img src="/images/facebook.svg"/>
+                <img src="/images/facebook.svg" />
               </a>
               <a href="https://www.linkedin.com/in/jack1in/" target="_blank">
                 <img src="/images/linkedin.svg" />
@@ -58,6 +60,10 @@ export default (props) => {
       <div className="mouse" onClick={() => findDistance('Introduction')}>
         <div className="mouseBall" />
       </div>
+      <Particles
+          width="100vw"
+          height="100vh"
+        />
     </div>
   );
 }
