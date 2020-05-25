@@ -53,7 +53,13 @@ export default (props) => {
             <Web
               url="https://tripmoment.com"
               image="tripmoment.png"
-              data="Tripmoment is a travel media that provide the latest travel information. In tripmoment I learned how to set up various AD on website to increase revenue and due to the high traffic, I have to spend more time handling back-end APIs than front-end UI."
+              data="Tripmoment is a travel media that provide the latest travel information. In Tripmoment I learned how to set up various AD on website to increase revenue and due to the high traffic, I have to spend more time handling back-end APIs than front-end UI."
+            />
+            <Web
+              device="mobile"
+              url="https://cathaybk.juksy.com"
+              image="koko.png"
+              data="This is  a game on the web, I'm responsible for front-end UI and animation effects, using pure javascript, HTML, and CSS, without using any front-end framework."
             />
           </Slider>
         </div>
