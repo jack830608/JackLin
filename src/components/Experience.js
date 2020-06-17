@@ -29,7 +29,13 @@ export default (props) => {
                   </span>
                 </div>
                 <p>
-                  Vpon is an advertising company combining big data, for me it's completely different from my previous job. There are more than 70 engineers in Vpon so we can exchange skills with each other and exposed to many new skills not limited to the front-end.                  </p>
+                  Vpon is an advertising company combining big data, for me it's completely different from my previous job. There are more than 70 engineers in Vpon so we can exchange skills with each other and exposed to many new skills not limited to the front-end.
+                </p>
+                <br />
+                <p>
+                  <span style={{ color: '#FFF', fontSize: '16px' }}>Skill：</span>
+                  <span style={{ fontStyle: 'italic' }}>HTML5、CSS3、JavaScript、jQuery、Node.js、Express、React、MySQL、Docker、GTM、GA、ShellScript</span>
+                </p>
               </div>
             </div>
             <div className="cd-timeline-block" >
@@ -49,8 +55,13 @@ export default (props) => {
                   </span>
                 </div>
                 <p>
-                  During the time at the Tripmoment, I have been responsible for more things ,including Front-end and Back-end. It also let me learn more skill and continue to help the company develop new products. Although I only worked here for three months, until now I have been maintaining Tripmoment part-time. 
+                  During the time at the Tripmoment, I have been responsible for more things ,including Front-end and Back-end. It also let me learn more skill and continue to help the company develop new products. Although I only worked here for three months, until now I have been maintaining Tripmoment part-time.
                   </p>
+                <br />
+                <p>
+                  <span style={{ color: '#FFF', fontSize: '16px' }}>Skill：</span>
+                  <span style={{ fontStyle: 'italic' }}>HTML5、CSS3、JavaScript、Node.js、Express、React、Redux、ejs、postgreSQL、GCP</span>
+                </p>
               </div>
             </div>
             <div className="cd-timeline-block">
@@ -79,6 +90,11 @@ export default (props) => {
                     Sbot
                     </a>
                   .</p>
+                <br />
+                <p>
+                  <span style={{ color: '#FFF', fontSize: '16px' }}>Skill：</span>
+                  <span style={{ fontStyle: 'italic' }}>HTML5、CSS3、JavaScript、Node.js、Express、React、Redux、Styled Components、Next.js、AWS、postgreSQL</span>
+                </p>
               </div>
             </div>
             <div className="cd-timeline-block">
@@ -105,7 +121,14 @@ export default (props) => {
                   </i>
                   </span>
                 </div>
-                <p>I have experienced a completely different corporate culture and agile spirit than the previous company and always thinks about the balance between efficiency and quality. It can quickly bring products to the market while ensuring the replacement of product value. The process of verifying whether it meets the needs of customers is essentially a baptism of flames, giving me a new understanding of teamwork, and making me more accountable.</p>
+                <p>
+                  I have experienced a completely different corporate culture and agile spirit than the previous company and always thinks about the balance between efficiency and quality. It can quickly bring products to the market while ensuring the replacement of product value. The process of verifying whether it meets the needs of customers is essentially a baptism of flames, giving me a new understanding of teamwork, and making me more accountable.
+                  </p>
+                <br />
+                <p>
+                  <span style={{ color: '#FFF', fontSize: '16px' }}>Skill：</span>
+                  <span style={{ fontStyle: 'italic' }}>HTML5、CSS3、JavaScript、Node.js、Express、MongoDB、Mongoose、Angular.js (1.x)、LineBot</span>
+                </p>
               </div>
             </div>
           </section>

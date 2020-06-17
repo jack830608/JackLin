@@ -16,15 +16,15 @@ export default (props) => {
     { type: "Node.js", level: 80 },
     { type: "Express.js", level: 85 },
     { type: "RESTful API", level: 80 },
-    { type: "MongoDB", level: 65 },
-    { type: "MySQL", level: 65 },
+    { type: "MongoDB", level: 75 },
+    { type: "MySQL", level: 70 },
     { type: "Docker", level: 70 },
     { type: "Python", level: 50 },
   ];
   const Others = [
     { type: "AWS、GCP", level: 70 },
     { type: "Nginx", level: 70 },
-    { type: "Gitflow", level: 85 },
+    { type: "Git", level: 85 },
     { type: "Command Line", level: 70 },
     { type: "ShellScript", level: 60 },
     { type: "Jira", level: 80 },
