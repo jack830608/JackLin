@@ -24,7 +24,7 @@ export default (props) => {
                 </span>
                   <span className="timeline-content-info-date">
                     <i className="fa fa-calendar-o" aria-hidden="true">
-                      2019-10 ~  Now
+                      2019-11 ~  Now
                   </i>
                   </span>
                 </div>
@@ -50,7 +50,7 @@ export default (props) => {
                 </span>
                   <span className="timeline-content-info-date">
                     <i className="fa fa-calendar-o" aria-hidden="true">
-                      2019-07 ~  2019-10
+                      2019-08 ~  2020-06
                   </i>
                   </span>
                 </div>
@@ -76,7 +76,7 @@ export default (props) => {
                 </span>
                   <span className="timeline-content-info-date">
                     <i className="fa fa-calendar-o" aria-hidden="true">
-                      2018-06 ~ 2019-07
+                      2018-06 ~ 2019-08
                   </i>
                   </span>
                 </div>
