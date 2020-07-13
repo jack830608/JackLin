@@ -1042,6 +1042,10 @@ a {
 }
 
 @media only screen and (max-width:768px) {
+    .slick-dots li{
+        width:15px;
+        height:15px;
+    }
     .process{
         height:3px;
     }

@@ -61,6 +61,12 @@ export default (props) => {
               image="koko.png"
               data="This is  a game on the web, I'm responsible for front-end UI and animation effects, using pure javascript, HTML, and CSS, without using any front-end framework."
             />
+            <Web
+              device="mobile"
+              url="https://demo.vpon.com"
+              image="ad-demo.png"
+              data="This is an advertising demo platform. Since every customer wants to see what their ads look like, so I made this platform only need uploading the image and selecting the format to produce a demo link to provide to the customer."
+            />
           </Slider>
         </div>
       </div>
