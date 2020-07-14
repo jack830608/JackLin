@@ -67,6 +67,12 @@ export default (props) => {
               image="ad-demo.png"
               data="This is an advertising demo platform. Since every customer wants to see what their ads look like, so I made this platform only need uploading the image and selecting the format to produce a demo link to provide to the customer."
             />
+            <Web
+              device="mobile"
+              url="https://apps.apple.com/tw/app/encoredays/id1517658643"
+              image="encoredays.png"
+              data="This app is a dating app for women, Customer can join or create activities easily, I am responsible for the entire app front-end and back-end."
+            />
           </Slider>
         </div>
       </div>
