@@ -57,7 +57,7 @@ export default (props) => {
             />
             <Web
               device="mobile"
-              url="https://cathaybk.juksy.com"
+              url="https://jack1in.com/koko_game/"
               image="koko.png"
               data="This is  a game on the web, I'm responsible for front-end UI and animation effects, using pure javascript, HTML, and CSS, without using any front-end framework."
             />
