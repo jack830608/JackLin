@@ -12,7 +12,7 @@ export default (props) => {
         </div>
         <div className={'introductionBox'}>
           <div className={'introductionLeft'}>
-            <p>My name is Jack Lin, have three years of experience in developing back-end and front-end.</p>
+            <p>My name is Jack Lin, have five years of experience in developing back-end and front-end.</p>
             <p>I am passionate about pursuing new knowledge, new skills and enjoying the sense of accomplishment of software development.</p>
             <p>For me , coding is to make life more convenient & solve problems in life, so I am happy to challenge new things and learn many new skills.</p>
             <div className="location">

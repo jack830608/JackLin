@@ -2,15 +2,17 @@ import React from 'react';
 import SkillBar from 'react-skillbars';
 
 export default (props) => {
-
   const FrontEnd = [
     { type: "HTML", level: 90 },
     { type: "CSS", level: 85 },
-    { type: "SASS/SCSS", level: 70 },
+    { type: "SASS/SCSS", level: 80 },
     { type: "Javascript", level: 85 },
     { type: "React/Redux", level: 85 },
-    { type: "Next.js", level: 80 },
-    { type: "Jquery", level: 75 },
+    { type: "Next.js", level: 85 },
+    { type: "Jquery", level: 85 },
+    { type: "Tailwind", level: 85 },
+    { type: "Emotion", level: 85 },
+    { type: "Styled-component", level: 85 },
   ];
   const BackEnd = [
     { type: "Node.js", level: 80 },
@@ -19,14 +21,13 @@ export default (props) => {
     { type: "MongoDB", level: 75 },
     { type: "MySQL", level: 70 },
     { type: "Docker", level: 70 },
-    { type: "Python", level: 50 },
   ];
   const Others = [
     { type: "AWS、GCP", level: 70 },
     { type: "Nginx", level: 70 },
     { type: "Git", level: 85 },
     { type: "Command Line", level: 70 },
-    { type: "ShellScript", level: 60 },
+    { type: "ShellScript", level: 70 },
     { type: "Jira", level: 80 },
     { type: "Confluence", level: 80 },
     { type: "GTM、GA", level: 75 },

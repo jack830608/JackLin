@@ -50,9 +50,6 @@ export default (props) => {
               <a href="mailto:jack830608@gmail.com" target="_blank">
                 <img src="/images/google.svg" />
               </a>
-              <a href="https://www.jack1in.blog" target="_blank">
-                <img src="/images/blogger.svg" />
-              </a>
             </div>
           </div>
         </div>

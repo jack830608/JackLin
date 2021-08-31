@@ -12,6 +12,32 @@ export default (props) => {
         </div>
         <div className="experienceBox">
           <section id="cd-timeline" className="cd-container">
+          <div className="cd-timeline-block" >
+              <div className="cd-timeline-img cd-picture">
+              </div>
+
+              <div className="cd-timeline-content">
+                <h2>Positive Grid</h2>
+                <div className="timeline-content-info">
+                  <span className="timeline-content-info-title" style={{ marginRight: "10px" }}>
+                    Senior Front-end Developer
+                </span>
+                  <span className="timeline-content-info-date">
+                    <i className="fa fa-calendar-o" aria-hidden="true">
+                      2020-08 ~  Now
+                  </i>
+                  </span>
+                </div>
+                <p>
+                  In Positive Grid my responsibility is to help our e-commerce site faster and stabler, at the same time I need to lead two junior developers to complete tasks from the marketing team. 
+                </p>
+                <br />
+                <p>
+                  <span style={{ color: '#FFF', fontSize: '16px' }}>Skill：</span>
+                  <span style={{ fontStyle: 'italic' }}>HTML5、CSS3、JavaScript、TypeScript、Tailwind、emotion、Node.js、Express、React、Next.js</span>
+                </p>
+              </div>
+            </div>
             <div className="cd-timeline-block" >
               <div className="cd-timeline-img cd-picture">
               </div>
@@ -24,7 +50,7 @@ export default (props) => {
                 </span>
                   <span className="timeline-content-info-date">
                     <i className="fa fa-calendar-o" aria-hidden="true">
-                      2019-11 ~  Now
+                      2019-11 ~  2020-08
                   </i>
                   </span>
                 </div>
@@ -46,7 +72,7 @@ export default (props) => {
                 <h2>Tripmoment - 時刻旅行</h2>
                 <div className="timeline-content-info">
                   <span className="timeline-content-info-title" style={{ marginRight: "10px" }}>
-                    Front-end
+                    Front-end Developer
                 </span>
                   <span className="timeline-content-info-date">
                     <i className="fa fa-calendar-o" aria-hidden="true">
@@ -72,7 +98,7 @@ export default (props) => {
                 <h2>MemePR - 潮語傳媒股份有限公司</h2>
                 <div className="timeline-content-info">
                   <span className="timeline-content-info-title" style={{ marginRight: "10px" }}>
-                    Front-end
+                    Front-end Developer
                 </span>
                   <span className="timeline-content-info-date">
                     <i className="fa fa-calendar-o" aria-hidden="true">
@@ -113,7 +139,7 @@ export default (props) => {
                 </h2>
                 <div className="timeline-content-info">
                   <span className="timeline-content-info-title" style={{ marginRight: "10px" }}>
-                    Back-end
+                    Back-end Developer
                   </span>
                   <span className="timeline-content-info-date">
                     <i className="fa fa-calendar-o" aria-hidden="true">
